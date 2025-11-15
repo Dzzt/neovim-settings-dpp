@@ -4,8 +4,6 @@ local fn = vim.fn
 local opt = vim.opt
 -- --------------------------------------------------
 
--- do not use XDG base directories
-
 -- Making table of core Lua files (includes dpp setup)
 local configs = {
     "runtimepaths",
