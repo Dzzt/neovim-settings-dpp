@@ -18,7 +18,7 @@ repo = 'mattn/webapi-vim'
 #mainly for Markdowns previews
 [[plugins]]
 repo = 'tyru/open-browser.vim'
-on_cmd = ['OpenBrowser', 'OpenBrowserEdit']
+on_cmd = ['PrevimOpen','OpenBrowser', 'OpenBrowserEdit']
 lua_post_source = '''
     require('config_open-browser')
 '''
@@ -27,7 +27,7 @@ lua_post_source = '''
 
 [[plugins]]
 repo = 'lambdalisue/mr.vim'
-on_cmd = ['MR', 'MRJump']
+on_event = ['VimEnter']
 lua_post_source = '''
     require('config_mr')
 '''
