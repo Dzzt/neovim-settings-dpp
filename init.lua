@@ -35,6 +35,5 @@ else
 
 end
 
-KRRFunctions = require('functions.KRRFunctions')
 
 
