@@ -1,0 +1,11 @@
+#SQL
+
+[[plugins]]
+repo = 'mattn/vim-sqlfmt'
+on_ft = ['sql']
+lua_source = '''
+
+    local g = vim.g
+    g.sqlfmt_program = [[sqlformat --comma_first true -k upper -o %s -]]
+
+'''

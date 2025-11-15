@@ -1,0 +1,158 @@
+# ddu.vim
+
+#---------------------------------------------------
+# 
+[[plugins]]
+repo = 'Shougo/ddu.vim'
+depends = ['denops.vim']
+hook_add = '''
+
+    let s:ddu_repo_dir = expand("~/.cache/dpp/repos/github.com")
+
+    "set runtimepath to all ui,sources and filters.
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-ui-ff'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-kind-file'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-kind-word'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-filter-matcher_substring'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-filter-matcher_hidden'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-source-file'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/Shougo/ddu-source-register'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/shun/ddu-source-buffer'
+    execute 'set runtimepath+=' . s:ddu_repo_dir . '/kuuote/ddu-source-mr'
+
+    "My plugins from local
+    execute 'set runtimepath+=' . expand("~/Documents/LocalNeovimPlugins/ddu-source-mrw")
+
+    "set ui
+    call ddu#custom#patch_global(#{
+        \   ui: 'ff',
+        \   uiParams: #{
+        \     ff: #{
+        \       split: 'floating', 
+        \       winWidth: &columns /2 + 20, 
+        \       winHeight: 20, 
+        \       winCol: 20, 
+        \       winRow: &lines /2 -5, 
+        \       autoResize: 'true',
+        \       floatingBorder: 'none',
+        \    },
+        \  },
+        \ })
+
+    "set kind(define actions)
+    call ddu#custom#patch_global(#{
+        \   kindOptions: #{
+        \      mr: #{defaultAction: 'open'},
+        \      register: #{defaultAction: 'open'},
+        \      buffer: #{defaultAction: 'open'},
+        \      file: #{defaultAction: 'open'},
+        \      word: #{defaultAction: 'append'},
+        \   },
+        \ })
+
+    "set sources
+    call ddu#custom#patch_global(#{
+        \   sources: [
+        \        #{name:'mr'},
+        \        #{name:'register'},
+        \        #{name:'buffer'},
+        \        #{name:'file'},
+        \        #{name:'word'},
+        \     ],
+        \   sourceOptions: #{
+        \     _: #{
+        \       matchers: ['matcher_substring','matcher_hidden'],
+        \     },
+        \   },
+        \ })
+
+    "ddu-key-setting(based on ui)
+    autocmd FileType ddu-ff call s:ddu_ff_config()
+
+    function! s:ddu_ff_config() abort
+      nnoremap <buffer><silent> <C-y>
+            \ <Cmd>call ddu#ui#do_action('itemAction')<CR>
+      nnoremap <buffer><silent> <CR>
+            \ <Cmd>call ddu#ui#do_action('itemAction')<CR>
+      nnoremap <buffer><silent> <Space>
+            \ <Cmd>call ddu#ui#do_action('toggleSelectItem')<CR>
+      nnoremap <buffer><silent> i
+            \ <Cmd>call ddu#ui#do_action('openFilterWindow')<CR>
+      nnoremap <buffer><silent> q
+            \ <Cmd>call ddu#ui#do_action('quit')<CR>
+    endfunction
+
+    "key mappings when filters
+    autocmd FileType ddu-ff-filter call s:ddu_filter_my_settings()
+    function! s:ddu_filter_my_settings() abort
+
+      "Avoid losing forcus after filtering
+      inoremap <buffer><silent> <CR>
+        \ <Esc><Cmd>call ddu#ui#do_action('closeFilterWindow')<CR>
+        \<Cmd>call win_gotoid(g:ddu#ui#ff#_filter_parent_winid)<CR>
+
+      nnoremap <buffer><silent> <CR>
+        \ <Esc><Cmd>call ddu#ui#do_action('closeFilterWindow')<CR>
+
+      nnoremap <buffer><silent> q
+        \ <Esc><Cmd>call ddu#ui#do_action('closeFilterWindow')<CR>
+
+    endfunction
+'''
+
+lua_add = '''
+    local keymap = vim.keymap
+
+    keymap.set('n','<space>h',"<Cmd>call ddu#start(#{sources: [#{name: 'mrw'}]})<CR>",{ silent = true })
+    keymap.set('n','<space>w',"<Cmd>call ddu#start(#{sources: [#{name: 'mr'}]})<CR>",{ silent = true })
+    keymap.set('n','<space>b',"<Cmd>call ddu#start(#{sources: [#{name: 'buffer'}]})<CR>",{ silent = true })
+    keymap.set('n','<space>r',"<Cmd>call ddu#start(#{sources: [#{name: 'register'}]})<CR>",{ silent = true })
+    keymap.set('n','<space>d',"<Cmd>call ddu#start(#{sources: [#{name: 'dein'}]})<CR>",{ silent = true })
+    keymap.set('n','<space>f',"<Cmd>call ddu#custom#patch_global(#{sourceOptions:#{file:#{path: expand('%:p:h')}}})<CR>:call ddu#start(#{sources: [#{name:'file'}]})<CR>",{ silent = true })
+    
+'''
+
+#ui
+#########################################################
+[[plugins]]
+repo = 'Shougo/ddu-ui-ff'
+on_source = 'ddu.vim'
+
+#kind
+#########################################################
+[[plugins]]
+repo = 'Shougo/ddu-kind-file'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'Shougo/ddu-kind-word'
+on_source = 'ddu.vim'
+
+#filter
+#########################################################
+[[plugins]]
+repo = 'Shougo/ddu-filter-matcher_substring'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'Shougo/ddu-filter-matcher_hidden'
+on_source = 'ddu.vim'
+
+#sources
+#########################################################
+[[plugins]]
+repo = 'Shougo/ddu-source-file'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'Shougo/ddu-source-register'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'shun/ddu-source-buffer'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'kuuote/ddu-source-mr'
+on_source = 'ddu.vim'
+

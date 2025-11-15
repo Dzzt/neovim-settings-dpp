@@ -1,0 +1,21 @@
+#neovim natvive Lsp configure
+
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
+on_event = 'BufReadPre'
+lua_source = '''
+    require('config_lsp')
+'''
+
+[[plugins]]
+repo ='mason-org/mason-lspconfig.nvim'
+on_source = 'nvim-lspconfig'
+
+#easy server installer works on neovim
+[[plugins]]
+repo ='mason-org/mason.nvim'
+on_source = 'nvim-lspconfig'
+lua_source = '''
+    require('config_mason')
+'''
+

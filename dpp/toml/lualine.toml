@@ -1,0 +1,10 @@
+# lualine
+[[plugins]]
+repo = 'nvim-lualine/lualine.nvim'
+on_event = ["VimEnter"]
+lua_add='''
+    require('config_lualine')
+'''
+
+#[[plugins]]
+#repo = 'nvim-tree/nvim-web-devicons'

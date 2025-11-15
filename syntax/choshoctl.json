@@ -1,0 +1,973 @@
+{"asahikawa_01":{"prefix":"asahikawa_01",
+	"body":"調書名=旭川市実延長面積調書",
+	"description":"旭川市　実延長面積調書"
+},
+"asahikawa_02":{"prefix":"asahikawa_02",
+	"body":"調書名=旭川市道路台帳",
+	"description":"旭川市　道路台帳"
+},
+"asahikawa_03":{"prefix":"asahikawa_03",
+	"body":"調書名=旭川市路面別延長リスト",
+	"description":"旭川市　路面別延長リスト"
+},
+"asahikawa_04":{"prefix":"asahikawa_04",
+	"body":"調書名=道路台帳第４表（橋調書）－旭川市仕様",
+	"description":"橋調書　旭川市仕様"
+},
+"bougosaku_01":{"prefix":"bougosaku_01",
+	"body":"調書名=防護柵調書",
+	"description":"防護柵調書"
+},
+"bougosaku_02":{"prefix":"bougosaku_02",
+	"body":"調書名=防護柵調書北海道仕様",
+	"description":"防護柵調書　北海道仕様"
+},
+"bubunjihodo_01":{"prefix":"bubunjihodo_01",
+	"body":"調書名=道路現況（部分自歩道）台帳延べ",
+	"description":"道路現況（部分自歩道）台帳　延べ"
+},
+"bubunjihodo_02":{"prefix":"bubunjihodo_02",
+	"body":"調書名=道路現況（部分自歩道）台帳設置",
+	"description":"道路現況（部分自歩道）台帳　設置"
+},
+"daichoseibiniyoru_01":{"prefix":"daichoseibiniyoru_01",
+	"body":"調書名=台帳整備による道路橋りょう費の測定単位の増加数値に関する調べ",
+	"description":"台帳整備による～増加数値に関する調べ"
+},
+"daichoseibiniyoru_02":{"prefix":"daichoseibiniyoru_02",
+	"body":"調書名=台帳整備による道路橋りょう費の測定単位の増加数値等に関する調べ",
+	"description":"台帳整備による～増加数値'等'に関する調べ"
+},
+"dorogenkyosokatsu_01":{"prefix":"dorogenkyosokatsu_01",
+	"body":"調書名=道路現況総括表",
+	"description":"道路現況総括表"
+},
+"dorogenkyosokatsu_02":{"prefix":"dorogenkyosokatsu_02",
+	"body":"調書名=道路現況総括表ブロック",
+	"description":"道路現況総括表　ブロック"
+},
+"dorogenkyosokatsu_03":{"prefix":"dorogenkyosokatsu_03",
+	"body":"調書名=道路現況総括表メートル単位",
+	"description":"道路現況総括表　メートル単位"
+},
+"dorogenkyosokatsu_04":{"prefix":"dorogenkyosokatsu_04",
+	"body":"調書名=道路現況総括表メートル単位ブロック",
+	"description":"道路現況総括表　メートル単位ブロック"
+},
+"dorogenkyosokatsu_05":{"prefix":"dorogenkyosokatsu_05",
+	"body":"調書名=道路現況台帳鹿児島",
+	"description":"道路現況台帳　鹿児島"
+},
+"dorogenkyosokatsu_06":{"prefix":"dorogenkyosokatsu_06",
+	"body":"調書名=道路現況台帳鹿児島（道路種別別）",
+	"description":"道路現況台帳　鹿児島（道路種別別）"
+},
+"doroho_01":{"prefix":"doroho_01",
+	"body":"調書名=道路台帳第１表",
+	"description":"道路台帳第１表"
+},
+"doroho_02":{"prefix":"doroho_02",
+	"body":"調書名=道路台帳第２表（実延長調書）",
+	"description":"実延長調書"
+},
+"doroho_03":{"prefix":"doroho_03",
+	"body":"調書名=道路台帳第３表（トンネル調書）",
+	"description":"トンネル調書"
+},
+"doroho_04":{"prefix":"doroho_04",
+	"body":"調書名=道路台帳第４表（橋調書）",
+	"description":"橋調書"
+},
+"doroho_05":{"prefix":"doroho_05",
+	"body":"調書名=道路台帳第５表（鉄道等との交差調書）",
+	"description":"鉄道等との交差調書"
+},
+"doroho_06":{"prefix":"doroho_06",
+	"body":"調書名=道路台帳第３表（トンネル調書）－区間属性値使用",
+	"description":"トンネル調書　区間属性値使用"
+},
+"doroho_07":{"prefix":"doroho_07",
+	"body":"調書名=道路台帳第４表（橋調書）－施設属性値使用",
+	"description":"橋調書－施設属性値使用"
+},
+"doroho_08":{"prefix":"doroho_08",
+	"body":"調書名=道路台帳第５表（鉄道等との交差調書）－区間属性値使用",
+	"description":"鉄道等との交差調書　区間属性値使用"
+},
+"doroho_09":{"prefix":"doroho_09",
+	"body":"調書名=道路台帳第１表－異動路線",
+	"description":"第１表　異動路線"
+},
+"doroho_10":{"prefix":"doroho_10",
+	"body":"調書名=道路台帳第２表（実延長調書）－異動路線",
+	"description":"実延長調書　異動路線"
+},
+"dorokyoryo_01":{"prefix":"dorokyoryo_01",
+	"body":"調書名=道路橋梁調書（異動調書）",
+	"description":"道路橋梁調書（異動調書）"
+},
+"dorokyoryo_02":{"prefix":"dorokyoryo_02",
+	"body":"調書名=道路橋梁調書（異動調書一宮大宮）",
+	"description":"異動調書一宮大宮"
+},
+"dorokyoryo_03":{"prefix":"dorokyoryo_03",
+	"body":"調書名=道路橋梁調書",
+	"description":"道路橋梁調書"
+},
+"dorokyoryo_04":{"prefix":"dorokyoryo_04",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の１",
+	"description":"道路橋梁調書（異動調書）２葉の１"
+},
+"dorokyoryo_05":{"prefix":"dorokyoryo_05",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の２",
+	"description":"道路橋梁調書（異動調書）２葉の２"
+},
+"dorokyoryo_06":{"prefix":"dorokyoryo_06",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の１東北",
+	"description":"道路橋梁調書（異動調書）２葉の１東北"
+},
+"dorokyoryo_07":{"prefix":"dorokyoryo_07",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の２東北",
+	"description":"道路橋梁調書（異動調書）２葉の２東北"
+},
+"dorokyoryo_08":{"prefix":"dorokyoryo_08",
+	"body":"調書名=道路橋梁調書ブロック",
+	"description":"道路橋梁調書ブロック"
+},
+"dorokyoryo_09":{"prefix":"dorokyoryo_09",
+	"body":"調書名=道路橋梁調書岩手県仕様",
+	"description":"道路橋梁調書　岩手県仕様"
+},
+"dorokyoryo_10":{"prefix":"dorokyoryo_10",
+	"body":"調書名=道路橋梁調書岩手県仕様ブロック",
+	"description":"道路橋梁調書　岩手県仕様ブロック"
+},
+"dorokyoryo_11":{"prefix":"dorokyoryo_11",
+	"body":"調書名=道路橋梁調書－道路種別整理番号順",
+	"description":"道路橋梁調書　道路種別整理番号順"
+},
+"dorokyoryo_12":{"prefix":"dorokyoryo_12",
+	"body":"調書名=道路橋梁調書米沢仕様",
+	"description":"道路橋梁調書米沢仕様"
+},
+"dorokyoryo_13":{"prefix":"dorokyoryo_13",
+	"body":"調書名=道路橋梁調書米沢仕様ブロック",
+	"description":"道路橋梁調書米沢仕様ブロック"
+},
+"dorogenkyo_01":{"prefix":"dorogenkyo_01",
+	"body":"調書名=道路現況調書（２葉の１）",
+	"description":"２葉の１　"
+},
+"dorogenkyo_02":{"prefix":"dorogenkyo_02",
+	"body":"調書名=道路現況調書（２葉の２）",
+	"description":"２葉の２　"
+},
+"dorogenkyo_03":{"prefix":"dorogenkyo_03",
+	"body":"調書名=道路現況調書（２葉の１）集計頁",
+	"description":"２葉の１　集計頁"
+},
+"dorogenkyo_04":{"prefix":"dorogenkyo_04",
+	"body":"調書名=道路現況調書（２葉の２）集計頁",
+	"description":"２葉の２　集計頁"
+},
+"dorogenkyo_05":{"prefix":"dorogenkyo_05",
+	"body":"調書名=道路現況調書（３葉の１）",
+	"description":"３葉の１　"
+},
+"dorogenkyo_06":{"prefix":"dorogenkyo_06",
+	"body":"調書名=道路現況調書（３葉の２）",
+	"description":"３葉の２　"
+},
+"dorogenkyo_07":{"prefix":"dorogenkyo_07",
+	"body":"調書名=道路現況調書（３葉の３）",
+	"description":"３葉の３　"
+},
+"dorogenkyo_08":{"prefix":"dorogenkyo_08",
+	"body":"調書名=道路現況調書（３葉の１）集計頁",
+	"description":"３葉の１　集計頁"
+},
+"dorogenkyo_09":{"prefix":"dorogenkyo_09",
+	"body":"調書名=道路現況調書（３葉の２）集計頁",
+	"description":"３葉の２　集計頁"
+},
+"dorogenkyo_10":{"prefix":"dorogenkyo_10",
+	"body":"調書名=道路現況調書（３葉の３）集計頁",
+	"description":"３葉の３　集計頁"
+},
+"dorogenkyo_11":{"prefix":"dorogenkyo_11",
+	"body":"調書名=道路現況調書（２葉の１）異動",
+	"description":"２葉の１　異動"
+},
+"dorogenkyo_12":{"prefix":"dorogenkyo_12",
+	"body":"調書名=道路現況調書（２葉の２）異動",
+	"description":"２葉の２　異動"
+},
+"dorogenkyo_13":{"prefix":"dorogenkyo_13",
+	"body":"調書名=道路現況調書（２葉の１）異動集計頁",
+	"description":"２葉の１　異動集計頁"
+},
+"dorogenkyo_14":{"prefix":"dorogenkyo_14",
+	"body":"調書名=道路現況調書（２葉の２）異動集計頁",
+	"description":"２葉の２　異動集計頁"
+},
+"dorogenkyo_15":{"prefix":"dorogenkyo_15",
+	"body":"調書名=道路現況調書（３葉の１）異動集計頁",
+	"description":"３葉の１　異動集計頁"
+},
+"dorogenkyo_16":{"prefix":"dorogenkyo_16",
+	"body":"調書名=道路現況調書（３葉の２）異動",
+	"description":"３葉の２　異動"
+},
+"dorogenkyo_17":{"prefix":"dorogenkyo_17",
+	"body":"調書名=道路現況調書（３葉の２）異動集計頁",
+	"description":"３葉の２　異動集計頁"
+},
+"dorogenkyo_18":{"prefix":"dorogenkyo_18",
+	"body":"調書名=道路現況調書（３葉の３）異動",
+	"description":"３葉の３　異動"
+},
+"dorogenkyo_19":{"prefix":"dorogenkyo_19",
+	"body":"調書名=道路現況調書（３葉の３）異動集計頁",
+	"description":"３葉の３　異動集計頁"
+},
+"dorogenkyo_20":{"prefix":"dorogenkyo_20",
+	"body":"調書名=道路現況調書（２葉の１）ブロック",
+	"description":"２葉の１　ブロック"
+},
+"dorogenkyo_21":{"prefix":"dorogenkyo_21",
+	"body":"調書名=道路現況調書（２葉の２）ブロック",
+	"description":"２葉の２　ブロック"
+},
+"dorogenkyo_22":{"prefix":"dorogenkyo_22",
+	"body":"調書名=道路現況調書（２葉の１）－道路種別整理番号順",
+	"description":"２葉の１　－道路種別整理番号順"
+},
+"dorogenkyo_23":{"prefix":"dorogenkyo_23",
+	"body":"調書名=道路現況調書（２葉の２）－道路種別整理番号順",
+	"description":"２葉の２　－道路種別整理番号順"
+},
+"dorogenkyo_24":{"prefix":"dorogenkyo_24",
+	"body":"調書名=道路現況調書（３葉の１）異動",
+	"description":"３葉の１　異動"
+},
+"dorogenkyo_25":{"prefix":"dorogenkyo_25",
+	"body":"調書名=道路現況調書「新潟県仕様」",
+	"description":"新潟県仕様"
+},
+"dorogenkyo_26":{"prefix":"dorogenkyo_26",
+	"body":"調書名=道路現況調書「新潟県仕様」ブロック",
+	"description":"新潟県仕様ブロック"
+},
+"dorogenkyo_27":{"prefix":"dorogenkyo_27",
+	"body":"調書名=道路現況調書「新潟県仕様」－異動路線",
+	"description":"新潟県仕様－異動路線"
+},
+"dorogenkyo_28":{"prefix":"dorogenkyo_28",
+	"body":"調書名=道路現況調書松山仕様",
+	"description":"道路現況調書松山仕様"
+},
+"dorogenkyo_29":{"prefix":"dorogenkyo_29",
+	"body":"調書名=道路現況調書浜北仕様",
+	"description":"道路現況調書浜北仕様"
+},
+"dorogenkyo_30":{"prefix":"dorogenkyo_30",
+	"body":"調書名=道路現況調書浜北仕様ブロック",
+	"description":"道路現況調書浜北仕様ブロック"
+},
+"genkyoido_01":{"prefix":"genkyoido_01",
+	"body":"調書名=道路現況異動調書",
+	"description":"道路現況異動調書"
+},
+"genkyokukan_01":{"prefix":"genkyokukan_01",
+	"body":"調書名=道路現況区間調書（１）",
+	"description":"現況区間調書（１）"
+},
+"genkyokukan_02":{"prefix":"genkyokukan_02",
+	"body":"調書名=道路現況区間調書（２）",
+	"description":"現況区間調書（２）"
+},
+"genkyokukan_03":{"prefix":"genkyokukan_03",
+	"body":"調書名=道路現況区間調書（１）－異動路線",
+	"description":"現況区間調書（１）－異動路線"
+},
+"genkyokukan_04":{"prefix":"genkyokukan_04",
+	"body":"調書名=道路現況区間調書（２）－異動路線",
+	"description":"現況区間調書（２）－異動路線"
+},
+"hodo_01":{"prefix":"hodo_01",
+	"body":"調書名=道路現況（部分自歩道）台帳延べ",
+	"description":"道路現況（部分自歩道）台帳延べ"
+},
+"hodo_02":{"prefix":"hodo_02",
+	"body":"調書名=道路現況（部分自歩道）台帳設置",
+	"description":"道路現況（部分自歩道）台帳設置"
+},
+"hodo_03":{"prefix":"hodo_03",
+	"body":"調書名=道路施設現況調査第３号様式（部分自歩道）",
+	"description":"第３号様式（部分自歩道）"
+},
+"hodo_04":{"prefix":"hodo_04",
+	"body":"調書名=歩道区分別集計",
+	"description":"歩道区分別集計"
+},
+"hodo_05":{"prefix":"hodo_05",
+	"body":"調書名=歩道現況調書",
+	"description":"歩道現況調書"
+},
+"hodo_06":{"prefix":"hodo_06",
+	"body":"調書名=歩道調書",
+	"description":"歩道調書"
+},
+"hodo_07":{"prefix":"hodo_07",
+	"body":"調書名=歩道等設置道路延長の幅員別内訳－整理番号",
+	"description":"歩道等設置道路延長の幅員別内訳　整理番号"
+},
+"hodo_08":{"prefix":"hodo_08",
+	"body":"調書名=歩道等設置道路延長の幅員別内訳－道路種別",
+	"description":"歩道等設置道路延長の幅員別内訳　道路種別"
+},
+"hosei_01":{"prefix":"hosei_01",
+	"body":"調書名=道路台帳補正一覧表",
+	"description":"道路台帳補正一覧表"
+},
+"ido_01":{"prefix":"ido_01",
+	"body":"調書名=道路現況異動調書",
+	"description":"道路現況異動調書"
+},
+"ido_02":{"prefix":"ido_02",
+	"body":"調書名=道路橋梁調書（異動調書）",
+	"description":"道路橋梁調書（異動調書）"
+},
+"ido_03":{"prefix":"ido_03",
+	"body":"調書名=道路橋梁調書（異動調書一宮大宮）",
+	"description":"異動調書一宮大宮"
+},
+"ido_04":{"prefix":"ido_04",
+	"body":"調書名=道路台帳第１表－異動路線",
+	"description":"第１表　異動路線"
+},
+"ido_05":{"prefix":"ido_05",
+	"body":"調書名=道路台帳第２表（実延長調書）－異動路線",
+	"description":"実延長調書　異動路線"
+},
+"ido_06":{"prefix":"ido_06",
+	"body":"調書名=道路現況調書（２葉の１）異動",
+	"description":"２葉の１　異動"
+},
+"ido_07":{"prefix":"ido_07",
+	"body":"調書名=道路現況調書（２葉の２）異動",
+	"description":"２葉の２　異動"
+},
+"ido_08":{"prefix":"ido_08",
+	"body":"調書名=道路現況調書（２葉の１）異動集計頁",
+	"description":"２葉の１　異動集計頁"
+},
+"ido_09":{"prefix":"ido_09",
+	"body":"調書名=道路現況調書（２葉の２）異動集計頁",
+	"description":"２葉の２　異動集計頁"
+},
+"ido_10":{"prefix":"ido_10",
+	"body":"調書名=道路現況調書（３葉の１）異動集計頁",
+	"description":"３葉の１　異動集計頁"
+},
+"ido_11":{"prefix":"ido_11",
+	"body":"調書名=道路現況調書（３葉の２）異動",
+	"description":"３葉の２　異動"
+},
+"ido_12":{"prefix":"ido_12",
+	"body":"調書名=道路現況調書（３葉の２）異動集計頁",
+	"description":"３葉の２　異動集計頁"
+},
+"ido_13":{"prefix":"ido_13",
+	"body":"調書名=道路現況調書（３葉の３）異動",
+	"description":"３葉の３　異動"
+},
+"ido_14":{"prefix":"ido_14",
+	"body":"調書名=道路現況調書（３葉の３）異動集計頁",
+	"description":"３葉の３　異動集計頁"
+},
+"ido_15":{"prefix":"ido_15",
+	"body":"調書名=道路現況調書「新潟県仕様」－異動路線",
+	"description":"新潟県仕様　異動路線"
+},
+"ido_16":{"prefix":"ido_16",
+	"body":"調書名=道路現況区間調書（１）－異動路線",
+	"description":"現況区間調書（１）　異動路線"
+},
+"ido_17":{"prefix":"ido_17",
+	"body":"調書名=道路現況区間調書（２）－異動路線",
+	"description":"現況区間調書（２）　異動路線"
+},
+"jitsuenchomenseki_01":{"prefix":"jitsuenchomenseki_01",
+	"body":"調書名=実延長面積調書",
+	"description":"実延長面積調書"
+},
+"jitsuenchomenseki_02":{"prefix":"jitsuenchomenseki_02",
+	"body":"調書名=実延長面積調書－異動路線",
+	"description":"実延長面積調書－異動路線"
+},
+"kenhoukoku_01":{"prefix":"kenhoukoku_01",
+	"body":"調書名=道路橋りょう総括異動調書",
+	"description":"県４表　道路橋りょう総括異動調書"
+},
+"kenhoukoku_02":{"prefix":"kenhoukoku_02",
+	"body":"調書名=道路橋りょう費の測定単位の数値等に関する調",
+	"description":"県４表　道路橋りょう費の～数値等に関する調"
+},
+"kenhoukoku_03":{"prefix":"kenhoukoku_03",
+	"body":"調書名=道路橋りょう費の測定単位の増減事由調",
+	"description":"県４表　道路橋りょう費の～増減事由調"
+},
+"kenhoukoku_04":{"prefix":"kenhoukoku_04",
+	"body":"調書名=道路橋梁総括表",
+	"description":"道路橋梁総括表"
+},
+"kenhoukoku_05":{"prefix":"kenhoukoku_05",
+	"body":"調書名=幅員別異動状況調",
+	"description":"県４表　幅員別異動状況調"
+},
+"kisosuchi_01":{"prefix":"kisosuchi_01",
+	"body":"調書名=道路基礎数値台帳１",
+	"description":"道路基礎数値台帳１"
+},
+"kisosuchi_02":{"prefix":"kisosuchi_02",
+	"body":"調書名=道路基礎数値台帳２",
+	"description":"道路基礎数値台帳２"
+},
+"kisosuchi_03":{"prefix":"kisosuchi_03",
+	"body":"調書名=道路基礎数値台帳１ブロック",
+	"description":"道路基礎数値台帳１　ブロック"
+},
+"kisosuchi_04":{"prefix":"kisosuchi_04",
+	"body":"調書名=道路基礎数値台帳１－道路種別整理番号順",
+	"description":"道路基礎数値台帳１　道路種別整理番号順"
+},
+"kisosuchi_05":{"prefix":"kisosuchi_05",
+	"body":"調書名=道路基礎数値台帳２ブロック",
+	"description":"道路基礎数値台帳２　ブロック"
+},
+"kisosuchi_06":{"prefix":"kisosuchi_06",
+	"body":"調書名=道路基礎数値台帳２－道路種別整理番号順",
+	"description":"道路基礎数値台帳２　道路種別整理番号順"
+},
+"kokkosho_01":{"prefix":"kokkosho_01",
+	"body":"調書名=道路施設現況調査第１号様式（総括）",
+	"description":"第１号様式（総括）"
+},
+"kokkosho_02":{"prefix":"kokkosho_02",
+	"body":"調書名=道路施設現況調査第２号様式（独立専用自歩道）",
+	"description":"第２号様式（独立専用自歩道）"
+},
+"kokkosho_03":{"prefix":"kokkosho_03",
+	"body":"調書名=道路施設現況調査第３号様式（部分自歩道）",
+	"description":"第３号様式（部分自歩道）"
+},
+"kokkosho_04":{"prefix":"kokkosho_04",
+	"body":"調書名=道路施設現況調査第５号様式（橋梁）",
+	"description":"第５号様式（橋梁）"
+},
+"kokkosho_05":{"prefix":"kokkosho_05",
+	"body":"調書名=道路施設現況調査第５＿２号様式（橋梁）",
+	"description":"第５＿２号様式（橋梁）"
+},
+"kokkosho_06":{"prefix":"kokkosho_06",
+	"body":"調書名=道路施設現況調査第６号様式（トンネル）",
+	"description":"第６号様式（トンネル）"
+},
+"kokkosho_07":{"prefix":"kokkosho_07",
+	"body":"調書名=道路施設現況調査第７号様式（踏切）",
+	"description":"第７号様式（踏切）"
+},
+"kokkosho_08":{"prefix":"kokkosho_08",
+	"body":"調書名=道路施設現況調査第１号様式（総括）北海道仕様",
+	"description":"第１号様式（総括）北海道仕様"
+},
+"kokkosho_09":{"prefix":"kokkosho_09",
+	"body":"調書名=道路施設現況調査第１号様式（総括）－路線別",
+	"description":"第１号様式（総括）－路線別"
+},
+"kokkosho_10":{"prefix":"kokkosho_10",
+	"body":"調書名=道路施設現況調査第２号様式（独立専用自歩道）北海道仕様",
+	"description":"第２号様式（独立専用自歩道）北海道仕様"
+},
+"kokkosho_11":{"prefix":"kokkosho_11",
+	"body":"調書名=道路施設現況調査第３号様式（部分自歩道）－路線別",
+	"description":"第３号様式（部分自歩道）－路線別"
+},
+"kokkosho_12":{"prefix":"kokkosho_12",
+	"body":"調書名=道路施設現況調査第４号様式（有料道路）",
+	"description":"第４号様式（有料道路）"
+},
+"kokkosho_13":{"prefix":"kokkosho_13",
+	"body":"調書名=橋梁現況総括表（国土交通省－７）",
+	"description":"橋梁現況総括表（国土交通省－７）"
+},
+"kokkosho_14":{"prefix":"kokkosho_14",
+	"body":"調書名=橋梁現況総括表男鹿仕様（国土交通省－７）",
+	"description":"橋梁現況総括表　男鹿仕様（国土交通省－７）"
+},
+"kokuji_01":{"prefix":"kokuji_01",
+	"body":"調書名=告示調書（区域決定）－道路部－最大最小－総延長",
+	"description":"区域決定　道路部－最大最小－総延長"
+},
+"kokuji_02":{"prefix":"kokuji_02",
+	"body":"調書名=告示調書（区域変更）－道路部－最大最小－総延長",
+	"description":"区域変更　道路部－最大最小－総延長"
+},
+"kokuji_03":{"prefix":"kokuji_03",
+	"body":"調書名=告示調書（供用開始）－実延長",
+	"description":"供用開始－実延長"
+},
+"kokuji_04":{"prefix":"kokuji_04",
+	"body":"調書名=区域変更調書",
+	"description":"区域変更調書"
+},
+"kokuji_henkou_01":{"prefix":"kokuji_henkou_01",
+	"body":"調書名=告示調書（区域変更）－道路部－最大最小－総延長",
+	"description":"区域変更　道路部－最大最小－総延長"
+},
+"kokuji_henkou_02":{"prefix":"kokuji_henkou_02",
+	"body":"調書名=告示調書（区域変更）－道路敷－最大最小－実延長",
+	"description":"区域変更　道路敷－最大最小－実延長"
+},
+"kokuji_henkou_03":{"prefix":"kokuji_henkou_03",
+	"body":"調書名=告示調書（区域変更）－道路敷－最大最小－総延長",
+	"description":"区域変更　道路敷－最大最小－総延長"
+},
+"kokuji_henkou_04":{"prefix":"kokuji_henkou_04",
+	"body":"調書名=告示調書（区域変更）－道路敷－平均－実延長",
+	"description":"区域変更　道路敷－平均－実延長"
+},
+"kokuji_henkou_05":{"prefix":"kokuji_henkou_05",
+	"body":"調書名=告示調書（区域変更）－道路敷－平均－総延長",
+	"description":"区域変更　道路敷－平均－総延長"
+},
+"kokuji_henkou_06":{"prefix":"kokuji_henkou_06",
+	"body":"調書名=告示調書（区域変更）－道路部－最大最小－実延長",
+	"description":"区域変更　道路部－最大最小－実延長"
+},
+"kokuji_henkou_07":{"prefix":"kokuji_henkou_07",
+	"body":"調書名=告示調書（区域変更）－道路部－平均－実延長",
+	"description":"区域変更　道路部－平均－実延長"
+},
+"kokuji_henkou_08":{"prefix":"kokuji_henkou_08",
+	"body":"調書名=告示調書（区域変更）－道路部－平均－総延長",
+	"description":"区域変更　道路部－平均－総延長"
+},
+"kokuji_henkou_09":{"prefix":"kokuji_henkou_09",
+	"body":"調書名=告示調書（区域変更）米沢仕様",
+	"description":"区域変更　米沢仕様"
+},
+"kokuji_kettei_01":{"prefix":"kokuji_kettei_01",
+	"body":"調書名=告示調書（区域決定）－道路部－最大最小－総延長",
+	"description":"区域決定　道路部－最大最小－総延長"
+},
+"kokuji_kettei_02":{"prefix":"kokuji_kettei_02",
+	"body":"調書名=告示調書（区域決定）－道路敷－最大最小－実延長",
+	"description":"区域決定　道路敷－最大最小－実延長"
+},
+"kokuji_kettei_03":{"prefix":"kokuji_kettei_03",
+	"body":"調書名=告示調書（区域決定）－道路敷－最大最小－総延長",
+	"description":"区域決定　道路敷－最大最小－総延長"
+},
+"kokuji_kettei_04":{"prefix":"kokuji_kettei_04",
+	"body":"調書名=告示調書（区域決定）－道路敷－平均－実延長",
+	"description":"区域決定　道路敷－平均－実延長"
+},
+"kokuji_kettei_05":{"prefix":"kokuji_kettei_05",
+	"body":"調書名=告示調書（区域決定）－道路敷－平均－総延長",
+	"description":"区域決定　道路敷－平均－総延長"
+},
+"kokuji_kettei_06":{"prefix":"kokuji_kettei_06",
+	"body":"調書名=告示調書（区域決定）－道路部－最大最小－実延長",
+	"description":"区域決定　道路部－最大最小－実延長"
+},
+"kokuji_kettei_07":{"prefix":"kokuji_kettei_07",
+	"body":"調書名=告示調書（区域決定）－道路部－平均－実延長",
+	"description":"区域決定　道路部－平均－実延長"
+},
+"kokuji_kettei_08":{"prefix":"kokuji_kettei_08",
+	"body":"調書名=告示調書（区域決定）－道路部－平均－総延長",
+	"description":"区域決定　道路部－平均－総延長"
+},
+"kokuji_kettei_09":{"prefix":"kokuji_kettei_09",
+	"body":"調書名=告示調書（区域決定）米沢仕様",
+	"description":"区域決定　米沢仕様"
+},
+"kokuji_kyouyou_01":{"prefix":"kokuji_kyouyou_01",
+	"body":"調書名=告示調書（供用開始）－実延長",
+	"description":"供用開始　実延長"
+},
+"kokuji_kyouyou_02":{"prefix":"kokuji_kyouyou_02",
+	"body":"調書名=告示調書（供用開始）－総延長",
+	"description":"供用開始　総延長"
+},
+"kokuji_kyouyou_03":{"prefix":"kokuji_kyouyou_03",
+	"body":"調書名=告示調書（供用開始）米沢仕様",
+	"description":"供用開始　米沢仕様"
+},
+"koufuzei_01":{"prefix":"koufuzei_01",
+	"body":"調書名=道路基礎数値台帳１",
+	"description":"道路基礎数値台帳１"
+},
+"koufuzei_02":{"prefix":"koufuzei_02",
+	"body":"調書名=道路基礎数値台帳２",
+	"description":"道路基礎数値台帳２"
+},
+"koufuzei_03":{"prefix":"koufuzei_03",
+	"body":"調書名=橋梁基礎数値台帳",
+	"description":"橋梁基礎数値台帳"
+},
+"koufuzei_04":{"prefix":"koufuzei_04",
+	"body":"調書名=道路橋梁調書（異動調書）",
+	"description":"異動調書"
+},
+"koufuzei_05":{"prefix":"koufuzei_05",
+	"body":"調書名=道路橋梁調書（異動調書一宮大宮）",
+	"description":"異動調書一宮大宮"
+},
+"koufuzei_06":{"prefix":"koufuzei_06",
+	"body":"調書名=道路橋梁調書",
+	"description":"道路橋梁調書"
+},
+"koufuzei_07":{"prefix":"koufuzei_07",
+	"body":"調書名=道路橋梁総括表",
+	"description":"道路橋梁総括表"
+},
+"koufuzei_08":{"prefix":"koufuzei_08",
+	"body":"調書名=道路橋りょう総括異動調書",
+	"description":"県４表　道路橋りょう総括異動調書"
+},
+"koufuzei_09":{"prefix":"koufuzei_09",
+	"body":"調書名=道路橋りょう費の測定単位の数値等に関する調",
+	"description":"県４表　道路橋りょう費の測定単位の数値等に関する調"
+},
+"koufuzei_10":{"prefix":"koufuzei_10",
+	"body":"調書名=道路橋りょう費の測定単位の増減事由調",
+	"description":"県４表　道路橋りょう費の測定単位の増減事由調"
+},
+"koufuzei_11":{"prefix":"koufuzei_11",
+	"body":"調書名=幅員別異動状況調",
+	"description":"県４表　幅員別異動状況調"
+},
+"koufuzei_12":{"prefix":"koufuzei_12",
+	"body":"調書名=道路明細表",
+	"description":"道路明細表"
+},
+"koufuzei_13":{"prefix":"koufuzei_13",
+	"body":"調書名=橋梁明細表",
+	"description":"橋梁明細表"
+},
+"koufuzei_14":{"prefix":"koufuzei_14",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の１",
+	"description":"道路橋梁調書（異動調書）２葉の１"
+},
+"koufuzei_15":{"prefix":"koufuzei_15",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の２",
+	"description":"道路橋梁調書（異動調書）２葉の２"
+},
+"koufuzei_16":{"prefix":"koufuzei_16",
+	"body":"調書名=道路基礎数値台帳１ブロック",
+	"description":"道路基礎数値台帳１　ブロック"
+},
+"koufuzei_17":{"prefix":"koufuzei_17",
+	"body":"調書名=道路基礎数値台帳２ブロック",
+	"description":"道路基礎数値台帳２　ブロック"
+},
+"koufuzei_18":{"prefix":"koufuzei_18",
+	"body":"調書名=橋梁基礎数値台帳ブロック",
+	"description":"橋梁基礎数値台帳　ブロック"
+},
+"koufuzei_19":{"prefix":"koufuzei_19",
+	"body":"調書名=道路基礎数値台帳１－道路種別整理番号順",
+	"description":"道路基礎数値台帳１－道路種別整理番号順"
+},
+"koufuzei_20":{"prefix":"koufuzei_20",
+	"body":"調書名=道路基礎数値台帳２－道路種別整理番号順",
+	"description":"道路基礎数値台帳２－道路種別整理番号順"
+},
+"koufuzei_21":{"prefix":"koufuzei_21",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の１東北",
+	"description":"道路橋梁調書（異動調書）２葉の１東北"
+},
+"koufuzei_22":{"prefix":"koufuzei_22",
+	"body":"調書名=道路橋梁調書（異動調書）２葉の２東北",
+	"description":"道路橋梁調書（異動調書）２葉の２東北"
+},
+"koufuzei_23":{"prefix":"koufuzei_23",
+	"body":"調書名=道路橋梁調書ブロック",
+	"description":"道路橋梁調書　ブロック"
+},
+"koufuzei_24":{"prefix":"koufuzei_24",
+	"body":"調書名=道路橋梁調書岩手県仕様",
+	"description":"道路橋梁調書　岩手県仕様"
+},
+"koufuzei_25":{"prefix":"koufuzei_25",
+	"body":"調書名=道路橋梁調書岩手県仕様ブロック",
+	"description":"道路橋梁調書　岩手県仕様ブロック"
+},
+"koufuzei_26":{"prefix":"koufuzei_26",
+	"body":"調書名=道路橋梁調書－道路種別整理番号順",
+	"description":"道路橋梁調書　道路種別整理番号順"
+},
+"koufuzei_27":{"prefix":"koufuzei_27",
+	"body":"調書名=道路橋梁調書米沢仕様",
+	"description":"道路橋梁調書　米沢仕様"
+},
+"koufuzei_28":{"prefix":"koufuzei_28",
+	"body":"調書名=道路橋梁調書米沢仕様ブロック",
+	"description":"道路橋梁調書　米沢仕様ブロック"
+},
+"koufuzeisantei_01":{"prefix":"koufuzeisantei_01",
+	"body":"調書名=交付税算定において増減すべき数値",
+	"description":"交付税算定において増減すべき数値"
+},
+"koufuzeisantei_02":{"prefix":"koufuzeisantei_02",
+	"body":"調書名=交付税算定において増減すべき数値Ｃｍ単位",
+	"description":"交付税算定において～Ｃｍ単位"
+},
+"koufuzeisantei_03":{"prefix":"koufuzeisantei_03",
+	"body":"調書名=交付税算定において増減すべき数値岩手県仕様",
+	"description":"交付税算定において～岩手県仕様"
+},
+"koufuzeisantei_04":{"prefix":"koufuzeisantei_04",
+	"body":"調書名=交付税算定において増減すべき数値岩手県仕様Ｃｍ単位",
+	"description":"交付税算定において～岩手県仕様Ｃｍ単位"
+},
+"koufuzeisantei_05":{"prefix":"koufuzeisantei_05",
+	"body":"調書名=交付税算定において増減すべき数値岩泉仕様",
+	"description":"交付税算定において～岩泉仕様"
+},
+"koufuzeisantei_06":{"prefix":"koufuzeisantei_06",
+	"body":"調書名=交付税算定において増減すべき数値岩泉仕様Ｃｍ単位",
+	"description":"交付税算定において～岩泉仕様Ｃｍ単位"
+},
+"kuikihenko_01":{"prefix":"kuikihenko_01",
+	"body":"調書名=区域変更調書",
+	"description":"区域変更調書"
+},
+"kyoryo_01":{"prefix":"kyoryo_01",
+	"body":"調書名=橋梁基礎数値台帳",
+	"description":"橋梁基礎数値台帳"
+},
+"kyoryo_02":{"prefix":"kyoryo_02",
+	"body":"調書名=道路台帳第４表（橋調書）",
+	"description":"道路台帳第４表（橋調書）"
+},
+"kyoryo_03":{"prefix":"kyoryo_03",
+	"body":"調書名=道路施設現況調査第５号様式（橋梁）",
+	"description":"第５号様式（橋梁）"
+},
+"kyoryo_04":{"prefix":"kyoryo_04",
+	"body":"調書名=道路施設現況調査第５＿２号様式（橋梁）",
+	"description":"第５＿２号様式（橋梁）"
+},
+"kyoryo_05":{"prefix":"kyoryo_05",
+	"body":"調書名=橋梁明細表",
+	"description":"橋梁明細表"
+},
+"kyoryo_06":{"prefix":"kyoryo_06",
+	"body":"調書名=橋梁基礎数値台帳ブロック",
+	"description":"橋梁基礎数値台帳ブロック"
+},
+"meisaihyo_01":{"prefix":"meisaihyo_01",
+	"body":"調書名=道路明細表",
+	"description":"道路明細表"
+},
+"naganoken_01":{"prefix":"naganoken_01",
+	"body":"調書名=市町村道路現況更新表長野県仕様",
+	"description":"市町村道路現況更新表　長野県仕様"
+},
+"nagasaki_01":{"prefix":"nagasaki_01",
+	"body":"調書名=長崎県橋りょう基礎数値増減表",
+	"description":"長崎県　橋りょう基礎数値増減表"
+},
+"nagasaki_02":{"prefix":"nagasaki_02",
+	"body":"調書名=長崎県地方交付税橋りょう台帳",
+	"description":"長崎県　地方交付税橋りょう台帳"
+},
+"nagasaki_03":{"prefix":"nagasaki_03",
+	"body":"調書名=長崎県地方交付税道路台帳",
+	"description":"長崎県　地方交付税道路台帳"
+},
+"nagasaki_04":{"prefix":"nagasaki_04",
+	"body":"調書名=長崎県道路基礎数値増減表",
+	"description":"長崎県　道路基礎数値増減表"
+},
+"nintei_01":{"prefix":"nintei_01",
+	"body":"調書名=路線認定調書",
+	"description":"路線認定調書"
+},
+"nintei_02":{"prefix":"nintei_02",
+	"body":"調書名=路線認定調書－道路種別別",
+	"description":"道路種別別"
+},
+"nintei_03":{"prefix":"nintei_03",
+	"body":"調書名=路線認定調書－ブロック番号別",
+	"description":"ブロック番号別"
+},
+"nintei_04":{"prefix":"nintei_04",
+	"body":"調書名=路線認定調書（平均幅員）",
+	"description":"平均幅員"
+},
+"nintei_05":{"prefix":"nintei_05",
+	"body":"調書名=路線認定調書（平均幅員）－ブロック番号別",
+	"description":"平均幅員－ブロック番号別"
+},
+"nintei_06":{"prefix":"nintei_06",
+	"body":"調書名=路線認定調書（平均幅員）－ブロック番号別実延長値使用",
+	"description":"平均幅員－ブロック番号別実延長値使用"
+},
+"nintei_07":{"prefix":"nintei_07",
+	"body":"調書名=路線認定調書（平均幅員）－ブロック番号別道路敷幅員・実延長値使用",
+	"description":"平均幅員－ブロック番号別道路敷幅員・実延長値使用"
+},
+"nintei_08":{"prefix":"nintei_08",
+	"body":"調書名=路線認定調書（平均幅員）－ブロック番号別道路敷幅員使用",
+	"description":"平均幅員－ブロック番号別道路敷幅員使用"
+},
+"nintei_09":{"prefix":"nintei_09",
+	"body":"調書名=路線認定調書（平均幅員）－実延長値使用",
+	"description":"平均幅員－実延長値使用"
+},
+"nintei_10":{"prefix":"nintei_10",
+	"body":"調書名=路線認定調書（平均幅員）－道路種別別",
+	"description":"平均幅員－道路種別別"
+},
+"nintei_11":{"prefix":"nintei_11",
+	"body":"調書名=路線認定調書（平均幅員）－道路種別別実延長値使用",
+	"description":"平均幅員－道路種別別実延長値使用"
+},
+"nintei_12":{"prefix":"nintei_12",
+	"body":"調書名=路線認定調書（平均幅員）－道路種別別道路敷幅員・実延長値使用",
+	"description":"平均幅員－道路種別別道路敷幅員・実延長値使用"
+},
+"nintei_13":{"prefix":"nintei_13",
+	"body":"調書名=路線認定調書（平均幅員）－道路種別別道路敷幅員使用",
+	"description":"平均幅員－道路種別別道路敷幅員使用"
+},
+"nintei_14":{"prefix":"nintei_14",
+	"body":"調書名=路線認定調書（平均幅員）－道路敷幅員・実延長値使用",
+	"description":"平均幅員－道路敷幅員・実延長値使用"
+},
+"nintei_15":{"prefix":"nintei_15",
+	"body":"調書名=路線認定調書（平均幅員）－道路敷幅員使用",
+	"description":"平均幅員－道路敷幅員使用"
+},
+"nintei_16":{"prefix":"nintei_16",
+	"body":"調書名=路線認定調書－ブロック番号別実延長値使用",
+	"description":"ブロック番号別　実延長値使用"
+},
+"nintei_17":{"prefix":"nintei_17",
+	"body":"調書名=路線認定調書－ブロック番号別道路敷幅員・実延長値使用",
+	"description":"ブロック番号別　道路敷幅員・実延長値使用"
+},
+"nintei_18":{"prefix":"nintei_18",
+	"body":"調書名=路線認定調書－ブロック番号別道路敷幅員使用",
+	"description":"ブロック番号別　道路敷幅員使用"
+},
+"nintei_19":{"prefix":"nintei_19",
+	"body":"調書名=路線認定調書－実延長値使用",
+	"description":"実延長値使用"
+},
+"nintei_20":{"prefix":"nintei_20",
+	"body":"調書名=路線認定調書－道路種別別実延長値使用",
+	"description":"道路種別別　実延長値使用"
+},
+"nintei_21":{"prefix":"nintei_21",
+	"body":"調書名=路線認定調書－道路種別別道路敷幅員・実延長値使用",
+	"description":"道路種別別　道路敷幅員・実延長値使用"
+},
+"nintei_22":{"prefix":"nintei_22",
+	"body":"調書名=路線認定調書－道路種別別道路敷幅員使用",
+	"description":"道路種別別　道路敷幅員使用"
+},
+"nintei_23":{"prefix":"nintei_23",
+	"body":"調書名=路線認定調書－道路敷幅員・実延長値使用",
+	"description":"道路敷幅員・実延長値使用"
+},
+"nintei_24":{"prefix":"nintei_24",
+	"body":"調書名=路線認定調書－道路敷幅員使用",
+	"description":"道路敷幅員使用"
+},
+"norindo_01":{"prefix":"norindo_01",
+	"body":"調書名=農林道台帳",
+	"description":"農林道台帳"
+},
+"rosen_01":{"prefix":"rosen_01",
+	"body":"調書名=道路台帳第１表",
+	"description":"道路台帳第１表"
+},
+"rosen_02":{"prefix":"rosen_02",
+	"body":"調書名=道路台帳第２表（実延長調書）",
+	"description":"第２表（実延長調書）"
+},
+"rosen_03":{"prefix":"rosen_03",
+	"body":"調書名=実延長面積調書",
+	"description":"実延長面積調書"
+},
+"rosen_04":{"prefix":"rosen_04",
+	"body":"調書名=道路現況区間調書（１）",
+	"description":"現況区間調書（１）"
+},
+"rosen_05":{"prefix":"rosen_05",
+	"body":"調書名=道路現況区間調書（２）",
+	"description":"現況区間調書（２）"
+},
+"rosen_06":{"prefix":"rosen_06",
+	"body":"調書名=道路現況総括表",
+	"description":"道路現況総括表"
+},
+"rosen_07":{"prefix":"rosen_07",
+	"body":"調書名=道路現況調書「新潟県仕様」",
+	"description":"新潟県仕様"
+},
+"rosen_08":{"prefix":"rosen_08",
+	"body":"調書名=旭川市道路台帳",
+	"description":"旭川市道路台帳"
+},
+"rosen_09":{"prefix":"rosen_09",
+	"body":"調書名=旭川市実延長面積調書",
+	"description":"旭川市実延長面積調書"
+},
+"rosen_10":{"prefix":"rosen_10",
+	"body":"調書名=道路台帳第１表－異動路線",
+	"description":"道路台帳第１表－異動路線"
+},
+"rosen_11":{"prefix":"rosen_11",
+	"body":"調書名=道路台帳第２表（実延長調書）－異動路線",
+	"description":"道路台帳第２表（実延長調書）－異動路線"
+},
+"rosen_12":{"prefix":"rosen_12",
+	"body":"調書名=実延長面積調書－異動路線",
+	"description":"実延長面積調書－異動路線"
+},
+"rosen_13":{"prefix":"rosen_13",
+	"body":"調書名=道路現況調書「新潟県仕様」－異動路線",
+	"description":"新潟県仕様－異動路線"
+},
+"rosen_14":{"prefix":"rosen_14",
+	"body":"調書名=道路現況区間調書（１）－異動路線",
+	"description":"現況区間調書（１）－異動路線"
+},
+"rosen_15":{"prefix":"rosen_15",
+	"body":"調書名=道路現況区間調書（２）－異動路線",
+	"description":"現況区間調書（２）－異動路線"
+},
+"shichoson_01":{"prefix":"shichoson_01",
+	"body":"調書名=市町村公共施設－３",
+	"description":"市町村公共施設－３"
+},
+"shinkyutaisho_01":{"prefix":"shinkyutaisho_01",
+	"body":"調書名=道路台帳新旧対照一覧表",
+	"description":"新旧対照一覧表"
+},
+"sokko_01":{"prefix":"sokko_01",
+	"body":"調書名=側溝現況調書",
+	"description":"側溝現況調書"
+},
+"tokyo_01":{"prefix":"tokyo_01",
+	"body":"調書名=道路現況調査表東京都仕様",
+	"description":"道路現況調査表　東京都仕様"
+}
+}

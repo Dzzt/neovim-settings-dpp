@@ -1,0 +1,8 @@
+#Golang
+
+[[plugins]]
+repo = 'mattn/vim-goimports'
+on_ft = ['go']
+hook_add='''
+    let g:goimports = 1
+'''

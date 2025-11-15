@@ -1,0 +1,31 @@
+#---------------------------------------------------
+# Colorschemes
+#
+
+[[plugins]]
+repo = 'junegunn/seoul256.vim'
+
+[[plugins]]
+repo = 'jeetsukumaran/vim-nefertiti'
+
+[[plugins]]
+repo = 'nanotech/jellybeans.vim'
+
+[[plugins]]
+repo = 'jonathanfilip/vim-lucius'
+
+[[plugins]]
+repo = 'NLKNguyen/papercolor-theme'
+
+[[plugins]]
+repo = 'AlessandroYorba/Despacio'
+
+[[plugins]]
+repo = 'AlessandroYorba/Alduin'
+
+[[plugins]]
+repo = 'vim-scripts/zenesque.vim'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+

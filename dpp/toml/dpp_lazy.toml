@@ -1,0 +1,63 @@
+# Plugins for lazy load
+
+#Config for denops
+##############################################################
+#vim-denops(needed for Shougowares)
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+on_event = ['VimEnter']
+lua_source = '''
+    require('config_denops')
+'''
+
+##############################################################
+#webapi for markdown preview
+[[plugins]]
+repo = 'mattn/webapi-vim'
+
+#mainly for Markdowns previews
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+on_cmd = ['OpenBrowser', 'OpenBrowserEdit']
+lua_post_source = '''
+    require('config_open-browser')
+'''
+
+##############################################################
+
+[[plugins]]
+repo = 'lambdalisue/mr.vim'
+on_cmd = ['MR', 'MRJump']
+lua_post_source = '''
+    require('config_mr')
+'''
+
+[[plugins]]
+repo = 'hadronized/hop.nvim'
+on_map = ['<Leader>f', '<Leader>t', '<Leader><Leader>f', '<Leader><Leader>t']
+lua_post_source='''
+    require('config_hop')
+'''
+
+[[plugins]]
+repo = 'myusuf3/numbers.vim'
+on_event = 'CursorHold'
+
+##############################################################
+
+#---------------------------------------------------
+# Others
+#
+[[plugins]]
+repo = 'windwp/nvim-autopairs'
+on_event = 'VimEnter'
+lua_source = '''
+    require("nvim-autopairs").setup{ }  
+'''
+
+[[plugins]]
+repo = 'kylechui/nvim-surround'
+on_map = ['ys', 'cs', 'ds', 'yS', 'cS', 'dS']
+lua_source = '''
+    require("nvim-surround").setup{}
+'''

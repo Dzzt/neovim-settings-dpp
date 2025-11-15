@@ -1,0 +1,141 @@
+[[plugins]]
+repo = 'Shougo/ddc.vim'
+on_event = 'InsertEnter'
+depends = ['denops.vim']
+hook_source = '''
+
+   set shortmess+=c
+
+   "set ui
+   call ddc#custom#patch_global('ui','native')
+
+   "sources
+
+   if &filetype == 'choshoctl'
+
+       call ddc#custom#patch_global('sources', ['vsnip'])
+
+   else
+
+       call ddc#custom#patch_global('sources', ['around', 'file'])
+
+   endif
+
+   "configure sources
+   call ddc#custom#patch_global('sourceOptions', #{
+        \ _: #{
+        \     matchers: ['matcher_head','matcher_length'],
+        \     sorters: ['sorter_rank'],
+        \     converters: ['converter_remove_overlap'],
+        \ },
+        \ around: #{
+        \     mark: 'A'
+        \ },
+        \ file: #{
+        \     mark: 'F',
+        \     isVolatile: v:true,
+        \     forceCompletionPattern: '\S/\S*',
+        \ },
+        \ nvim-lsp: #{
+        \     mark: 'L',
+        \     forceCompletionPattern: '\.\w*|:\w*|->\w*',
+        \ },
+        \ vsnip: #{
+        \     mark: 'vsnip',
+        \ },
+        \ })
+
+   "set parameters for sources
+   call ddc#custom#patch_global('sourceParams', {
+        \ 'around': {'maxSize': 500},
+        \ 'file': {'smartCase': v:true},
+        \ })
+
+   "to use TAB or S-TAB over popup menu
+   inoremap <silent><expr> <TAB>
+        \ pumvisible() ? '<C-n>' :
+        \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
+        \ '<TAB>' : ddc#map#manual_complete()
+
+   inoremap <expr><S-TAB>  pumvisible() ? '<C-p>' : '<C-h>'
+
+   "activate ddc
+   call ddc#enable()
+
+'''
+
+
+##############################################################
+#ddc ui
+[[plugins]]
+repo = 'Shougo/ddc-ui-native'
+on_source ='ddc.vim'
+
+##############################################################
+#matchers
+
+#match from the top of the word
+[[plugins]]
+repo = 'Shougo/ddc-matcher_head'
+on_source ='ddc.vim'
+
+#remove candidates when its length is less than you input.
+[[plugins]]
+repo = 'Shougo/ddc-matcher_length'
+on_source ='ddc.vim'
+
+#avoid overlapping candidates
+[[plugins]]
+repo = 'Shougo/ddc-converter_remove_overlap'
+on_source ='ddc.vim'
+
+##############################################################
+#sorters
+
+#sort candidates
+[[plugins]]
+repo = 'Shougo/ddc-sorter_rank'
+on_source ='ddc.vim'
+
+##############################################################
+#sources
+
+#to use neovim native lsp
+[[plugins]]
+repo = 'Shougo/ddc-nvim-lsp'
+on_source ='ddc.vim'
+
+#complete with words around cursor
+[[plugins]]
+repo = 'Shougo/ddc-around'
+on_source ='ddc.vim'
+
+#complete filename
+[[plugins]]
+repo = 'LumaKernel/ddc-file'
+on_source ='ddc.vim'
+
+#dictionary completion
+[[plugins]]
+repo = 'matsui54/ddc-dictionary'
+on_source ='ddc.vim'
+on_ft = 'choshoctl'
+
+#snippet
+[[plugins]]
+repo = 'hrsh7th/vim-vsnip'
+on_event = 'InsertEnter'
+on_ft = 'choshoctl'
+hook_add = '''
+   "set snippet dir
+   let g:vsnip_snippet_dir = expand('~/.config/nvim/snippets')
+   let g:vsnip_filetypes = {}
+
+   "set key mappings on ddc
+'''
+
+#vsnip integration for ddc
+[[plugins]]
+repo = 'uga-rosa/ddc-source-vsnip'
+on_source ='ddc.vim'
+
