@@ -20,9 +20,6 @@ hook_add = '''
     execute 'set runtimepath+=' . s:ddu_repo_dir . '/shun/ddu-source-buffer'
     execute 'set runtimepath+=' . s:ddu_repo_dir . '/kuuote/ddu-source-mr'
 
-    "My plugins from local
-    execute 'set runtimepath+=' . expand("~/Documents/LocalNeovimPlugins/ddu-source-mrw")
-
     "set ui
     call ddu#custom#patch_global(#{
         \   ui: 'ff',
