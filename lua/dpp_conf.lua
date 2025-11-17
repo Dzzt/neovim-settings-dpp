@@ -61,8 +61,6 @@ vim.api.nvim_create_autocmd("User", {
 })
 
 opt.filetype = "on"
-opt.filetype.indent = "on"
-opt.filetype.plugin = "on"
 opt.syntax = "on"
 
 -- create install command

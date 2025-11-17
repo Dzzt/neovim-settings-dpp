@@ -12,7 +12,5 @@ local opt = vim.opt
 
 -- Set 'filetype'
     opt.filetype = "on"
-    opt.filetype.indent = "on"
-    opt.filetype.plugin = "on"
     opt.syntax = "on"
 
