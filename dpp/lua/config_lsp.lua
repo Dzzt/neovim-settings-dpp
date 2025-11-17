@@ -10,10 +10,9 @@ cmd = {'deno', 'lsp'}
 local lsp_servers = {
     "pyright",
     "lua_ls",
-    "stylua",
     "powershell_es",
+    "csharp_ls",
     "vimls",
-    "omnisharp",
 }
 
 -- Setup mason_lspconfig here

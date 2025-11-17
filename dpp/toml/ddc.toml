@@ -139,3 +139,7 @@ hook_add = '''
 repo = 'uga-rosa/ddc-source-vsnip'
 on_source ='ddc.vim'
 
+[[plugins]]
+repo = 'Dzzt/ddu-source-mrw.git'
+on_source = 'ddc.vim'
+

@@ -24,4 +24,14 @@ opt.runtimepath:append(Dpp_Dir)
 opt.runtimepath:append(Dpp_Dir .. [[/lua]])
 opt.runtimepath:append(Dpp_Dir .. [[/toml]])
 
+-- to avoid a plugin(actually mason.vim) to make state file under ~/.cache/nvim
+local old_stdpath = fn.stdpath
 
+fn.stdpath = function(value)
+
+    if value == "cache" then
+        return fn.expand("~/.cache/dpp")
+    end
+
+    return old_stdpath(value)
+end
