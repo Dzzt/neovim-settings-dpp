@@ -25,13 +25,16 @@ hook_add = '''
         \   ui: 'ff',
         \   uiParams: #{
         \     ff: #{
+        \       ignoreEmpty: v:true, 
         \       split: 'floating', 
+        \       autoResize: v:true,
+        \       displaySourceName: 'short',
+        \       floatingBorder: 'shadow',
         \       winWidth: &columns /2 + 20, 
         \       winHeight: 20, 
         \       winCol: 20, 
         \       winRow: &lines /2 -5, 
-        \       autoResize: 'true',
-        \       floatingBorder: 'none',
+        \       maxDisplayItems: 10, 
         \    },
         \  },
         \ })
@@ -101,12 +104,23 @@ hook_add = '''
 lua_add = '''
     local keymap = vim.keymap
 
-    keymap.set('n','<space>h',"<Cmd>call ddu#start(#{sources: [#{name: 'mrw'}]})<CR>",{ silent = true })
-    keymap.set('n','<space>w',"<Cmd>call ddu#start(#{sources: [#{name: 'mr'}]})<CR>",{ silent = true })
-    keymap.set('n','<space>b',"<Cmd>call ddu#start(#{sources: [#{name: 'buffer'}]})<CR>",{ silent = true })
-    keymap.set('n','<space>r',"<Cmd>call ddu#start(#{sources: [#{name: 'register'}]})<CR>",{ silent = true })
-    keymap.set('n','<space>d',"<Cmd>call ddu#start(#{sources: [#{name: 'dpp'}]})<CR>",{ silent = true })
-    keymap.set('n','<space>f',"<Cmd>call ddu#custom#patch_global(#{sourceOptions:#{file:#{path: expand('%:p:h')}}})<CR>:call ddu#start(#{sources: [#{name:'file'}]})<CR>",{ silent = true })
+    -- mr
+    keymap.set('n','<space>w',"<Cmd>call ddu#start(#{sources: [#{ name: 'mr' }]})<CR>",{ silent = true })
+    
+    -- mr only written file
+    keymap.set('n','<space>h',"<Cmd>call ddu#start(#{sources: [#{ name: 'mr', params:#{ kind: 'mrw' } }]})<CR>",{ silent = true })
+
+    -- buffer
+    keymap.set('n','<space>b',"<Cmd>call ddu#start(#{sources: [#{ name: 'buffer' }]})<CR>",{ silent = true })
+
+    -- clipboard
+    keymap.set('n','<space>r',"<Cmd>call ddu#start(#{sources: [#{ name: 'register' }]})<CR>",{ silent = true })
+
+    -- show installed plugins from dpp
+    keymap.set('n','<space>d',"<Cmd>call ddu#start(#{sources: [#{ name: 'dpp' }]})<CR>",{ silent = true })
+
+    -- set current path before call ddu-source-file
+    keymap.set('n','<space>f',"<Cmd>call ddu#custom#patch_global(#{ sourceOptions:#{ file:#{ path: expand('%:p:h') } }})<CR>:call ddu#start(#{sources: [#{ name:'file' }]})<CR>",{ silent = true })
     
 '''
 
