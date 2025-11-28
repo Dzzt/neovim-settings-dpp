@@ -55,6 +55,7 @@ hook_add = '''
         \        #{name:'buffer'},
         \        #{name:'file'},
         \        #{name:'word'},
+        \        #{name:'dpp'},
         \     ],
         \   sourceOptions: #{
         \     _: #{
@@ -104,7 +105,7 @@ lua_add = '''
     keymap.set('n','<space>w',"<Cmd>call ddu#start(#{sources: [#{name: 'mr'}]})<CR>",{ silent = true })
     keymap.set('n','<space>b',"<Cmd>call ddu#start(#{sources: [#{name: 'buffer'}]})<CR>",{ silent = true })
     keymap.set('n','<space>r',"<Cmd>call ddu#start(#{sources: [#{name: 'register'}]})<CR>",{ silent = true })
-    keymap.set('n','<space>d',"<Cmd>call ddu#start(#{sources: [#{name: 'dein'}]})<CR>",{ silent = true })
+    keymap.set('n','<space>d',"<Cmd>call ddu#start(#{sources: [#{name: 'dpp'}]})<CR>",{ silent = true })
     keymap.set('n','<space>f',"<Cmd>call ddu#custom#patch_global(#{sourceOptions:#{file:#{path: expand('%:p:h')}}})<CR>:call ddu#start(#{sources: [#{name:'file'}]})<CR>",{ silent = true })
     
 '''
