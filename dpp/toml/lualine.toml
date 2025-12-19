@@ -3,7 +3,9 @@
 repo = 'nvim-lualine/lualine.nvim'
 on_event = ["VimEnter"]
 lua_add='''
-    require('config_lualine')
+    if vim.g.neovide then
+        require('config_lualine')
+    end
 '''
 
 #[[plugins]]

@@ -42,7 +42,7 @@ if dpp.load_state(dpp_base) then
   -- denops.vim を runtimepath に追加
   opt.runtimepath:prepend(denops_src)
 
-  -- 
+  -- stateを作成する
   api.nvim_create_autocmd("User", {
 	pattern = "DenopsReady",
   	callback = function ()
@@ -63,11 +63,6 @@ vim.api.nvim_create_autocmd("User", {
 opt.filetype = "on"
 opt.syntax = "on"
 
--- create install command
-api.nvim_create_user_command("DppInstall",
-function()
-    dpp.async_ext_action("installer", "install")
-end,{})
 
 -- create update command
 api.nvim_create_user_command("DppUpdate",
@@ -76,3 +71,56 @@ function(opts)
 	dpp.async_ext_action("installer", "update", { names = args })
 end, { nargs = "*" })
 
+-- list updated plugins
+api.nvim_create_user_command("DppShowUpdatedPlugins",
+function()
+
+    local updated_plugins = dpp.sync_ext_action("installer", "getUpdated")
+
+    if next(updated_plugins) == nil then
+        print("No plugins updated.")
+        return
+    else
+        print(string.format("Updated plugins:\n"))
+
+        for _,plugin in ipairs(updated_plugins) do
+
+            local string_result = string.format(
+                    " %s\n  %s\n\n"
+                    ,plugin["repo"]
+                    ,plugin["url"]
+                )
+
+            print(string_result)
+
+        end
+    end
+
+end, {})
+
+
+-- これは手で打ってもいいかな？
+---- create install command
+--api.nvim_create_user_command("DppInstall",
+--function()
+--    dpp.async_ext_action("installer", "install")
+--end,{})
+
+
+-- 上ので足りるので
+-- show update logs
+-- api.nvim_create_user_command("DppShowUpdateLogs",
+-- function()
+-- 
+--     local logs = dpp.sync_ext_action("installer", "getUpdateLogs")
+-- 
+--     if next(logs) == nil then
+--         print("No plugins updated.")
+--         return
+--     else
+--         print(logs[#logs-1])
+--         print(logs[#logs])
+--     end
+-- 
+-- end, {})
+-- 

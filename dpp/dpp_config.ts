@@ -1,10 +1,9 @@
-import {
-    BaseConfig,
-    ContextBuilder,
-    Dpp,
-    Plugin,
-} from "https://deno.land/x/dpp_vim@v1.0.0/types.ts";
-import { Denops, fn } from "https://deno.land/x/dpp_vim@v1.0.0/deps.ts";
+//denolandじゃなくて今後はこちらが推奨になるという話なので
+import { ContextBuilder, Plugin } from "jsr:@shougo/dpp-vim@^5.0.0/types";
+import { Dpp } from "jsr:@shougo/dpp-vim@^5.0.0/dpp";
+import { BaseConfig } from "jsr:@shougo/dpp-vim@^5.0.0/config";
+import { Denops } from "jsr:@denops/std@^8.0.0";
+import * as fn from "jsr:@denops/std@^8.0.0/function";
 
 type Toml = {
     hooks_file?: string;
