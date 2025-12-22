@@ -18,7 +18,6 @@ repo = 'mattn/webapi-vim'
 #mainly for Markdowns previews
 [[plugins]]
 repo = 'tyru/open-browser.vim'
-#on_cmd = ['OpenBrowser', 'OpenBrowserEdit']
 on_event='VimEnter'
 lua_post_source = '''
     require('config_open-browser')
@@ -42,7 +41,7 @@ lua_post_source='''
 
 [[plugins]]
 repo = 'myusuf3/numbers.vim'
-on_event = 'CursorHold'
+on_event = 'VimEnter'
 
 ##############################################################
 
@@ -58,7 +57,7 @@ lua_source = '''
 
 [[plugins]]
 repo = 'kylechui/nvim-surround'
-on_map = ['ys', 'cs', 'ds', 'yS', 'cS', 'dS']
+on_map = ['ys', 'cs', 'ds', 'yS', 'cS', 'dS','S']
 lua_source = '''
     require("nvim-surround").setup{}
 '''

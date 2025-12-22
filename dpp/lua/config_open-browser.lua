@@ -3,5 +3,5 @@
 
 local keymap = vim.keymap
 
-keymap.set('n', 'owb', '<Plug>(openbrowser-open)', { noremap = false, silent = true })
-keymap.set('v', 'owb', '<Plug>(openbrowser-open)', { noremap = false, silent = true })
+keymap.set('n', '<Leader>ob', '<Plug>(openbrowser-open)', { noremap = false, silent = true })
+keymap.set('v', '<Leader>ob', '<Plug>(openbrowser-open)', { noremap = false, silent = true })

@@ -1,10 +1,11 @@
 -- configuration for ddu.vim
 
-
 local fn = vim.fn
 local keymap = vim.keymap
 
 -- 1. runtimepath の動的設定 (dpp のパス解決)
+-------------------------------------------------------------------------------
+
 local ddu_repo_dir = fn.expand("~/.cache/dpp/repos/github.com")
 
 local plugins = {
@@ -23,7 +24,10 @@ for _, plugin in ipairs(plugins) do
   vim.opt.runtimepath:append(ddu_repo_dir .. "/" .. plugin)
 end
 
+
 -- 2. Global Patch (UI, Kind, Sources)
+-------------------------------------------------------------------------------
+
 fn["ddu#custom#patch_global"]({
 
   ui = 'ff',
@@ -68,30 +72,46 @@ fn["ddu#custom#patch_global"]({
 
 })
 
+
 -- 3. キーマッピング用の関数定義 (FileType autocmd 用)
--- Lua関数として定義し、後続の autocmd から呼び出します
+-------------------------------------------------------------------------------
+
+-- UIアクションを呼び出すためのヘルパー関数
+local function do_action(name, params)
+  return function()
+    fn["ddu#ui#do_action"](name, params or vim.empty_dict{})
+  end
+end
+
 _G.ddu_ff_settings = function()
   local opts = { buffer = true, silent = true }
-  vim.keymap.set('n', '<C-y>', "<Cmd>call ddu#ui#do_action('itemAction')<CR>", opts)
-  vim.keymap.set('n', '<CR>', "<Cmd>call ddu#ui#do_action('itemAction')<CR>", opts)
-  vim.keymap.set('n', '<Space>', "<Cmd>call ddu#ui#do_action('toggleSelectItem')<CR>", opts)
-  vim.keymap.set('n', 'i', "<Cmd>call ddu#ui#do_action('openFilterWindow')<CR>", opts)
-  vim.keymap.set('n', 'q', "<Cmd>call ddu#ui#do_action('quit')<CR>", opts)
+  
+-- アクション名だけで定義できる
+  vim.keymap.set('n', '<C-y>',   do_action('itemAction'),       opts) 
+  vim.keymap.set('n', '<CR>',    do_action('itemAction'),       opts) 
+  vim.keymap.set('n', '<Space>', do_action('toggleSelectItem'), opts) 
+  vim.keymap.set('n', 'i',       do_action('openFilterWindow'), opts) 
+  vim.keymap.set('n', 'q',       do_action('quit'),             opts) 
 end
 
+-- フィルター用の設定
 _G.ddu_filter_settings = function()
+
   local opts = { buffer = true, silent = true }
-  -- フィルターウィンドウでの設定
+
+  -- フィルターウィンドウを閉じて親ウィンドウに戻るキー
   vim.keymap.set('i', '<CR>', function()
-    fn["ddu#ui#do_action"]("closeFilterWindow")
+    do_action("closeFilterWindow")
     fn.win_gotoid(vim.g["ddu#ui#ff#_filter_parent_winid"])
   end, opts)
-  
-  vim.keymap.set('n', '<CR>', "<Esc><Cmd>call ddu#ui#do_action('closeFilterWindow')<CR>", opts)
-  vim.keymap.set('n', 'q', "<Esc><Cmd>call ddu#ui#do_action('closeFilterWindow')<CR>", opts)
+
+  vim.keymap.set('n', '<CR>', do_action('closeFilterWindow'), opts)
+  vim.keymap.set('n', 'q',    do_action('closeFilterWindow'), opts)
 end
 
+
 -- 4. Autocmd の設定
+-------------------------------------------------------------------------------
 local ddu_group = vim.api.nvim_create_augroup("UserDduConfig", { clear = true })
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -106,17 +126,24 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function() _G.ddu_filter_settings() end,
 })
 
--- 個別起動用のキーマップもここに集約
-local keymap = vim.keymap
-local fn = vim.fn
+-- 5. 各source用の起動用キーマップ
+-------------------------------------------------------------------------------
 
-keymap.set('n','<space>w',"<Cmd>call ddu#start(#{sources: [#{ name: 'mr' }]})<CR>",{ silent = true })
-keymap.set('n','<space>h',"<Cmd>call ddu#start(#{sources: [#{ name: 'mr', params:#{ kind: 'mrw' } }]})<CR>",{ silent = true })
-keymap.set('n','<space>b',"<Cmd>call ddu#start(#{sources: [#{ name: 'buffer' }]})<CR>",{ silent = true })
-keymap.set('n','<space>r',"<Cmd>call ddu#start(#{sources: [#{ name: 'register' }]})<CR>",{ silent = true })
-keymap.set('n','<space>d',"<Cmd>call ddu#start(#{sources: [#{ name: 'dpp' }]})<CR>",{ silent = true })
+-- アクションを呼び出すためのヘルパー関数
 
--- File source 特有のパス解決を含むマッピング
+local function ddu_start(source_spec)
+  return function()
+    vim.fn["ddu#start"]({ sources = { source_spec } })
+  end
+end
+
+-- buffer
+keymap.set('n', '<space>b', ddu_start({ name = 'buffer' }), { silent = true })
+
+-- register
+keymap.set('n', '<space>r', ddu_start({ name = 'register' }), { silent = true })
+
+-- file (set current path)
 keymap.set('n','<space>f', function()
     fn["ddu#custom#patch_global"]({
         sourceOptions = {
@@ -125,3 +152,18 @@ keymap.set('n','<space>f', function()
     })
     fn["ddu#start"]({ sources = {{ name = 'file' }} })
 end, { silent = true })
+
+-- dpp(loaded plugins)
+keymap.set('n', '<space>d', ddu_start({ name = 'dpp' }), { silent = true })
+
+-- mr
+keymap.set('n', '<space>w', ddu_start({ name = 'mr' }), { silent = true })
+
+-- mr for only written files
+keymap.set('n', '<space>h', ddu_start({ 
+  name = 'mr', 
+  params = { kind = 'mrw' } 
+}), { silent = true })
+
+
+

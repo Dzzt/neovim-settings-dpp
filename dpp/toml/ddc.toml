@@ -1,3 +1,5 @@
+##ddc.vim and its kins
+
 [[plugins]]
 repo = 'Shougo/ddc.vim'
 on_event = 'InsertEnter'
@@ -7,7 +9,6 @@ lua_source = '''
     require('config_ddc')
 
 '''
-
 
 ##############################################################
 #ddc ui
@@ -70,12 +71,8 @@ on_ft = 'choshoctl'
 repo = 'hrsh7th/vim-vsnip'
 on_event = 'InsertEnter'
 on_ft = 'choshoctl'
-hook_add = '''
-   "set snippet dir
-   let g:vsnip_snippet_dir = expand('~/.config/nvim/snippets')
-   let g:vsnip_filetypes = {}
-
-   "set key mappings on ddc
+lua_add = '''
+    require('config_vim-vsnip')
 '''
 
 #vsnip integration for ddc

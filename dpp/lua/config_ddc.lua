@@ -1,3 +1,5 @@
+-- configuration for ddc.vim
+
 local fn = vim.fn
 
 -- 1. 基本設定
@@ -48,15 +50,13 @@ fn["ddc#custom#patch_global"]({
 -- 3. Filetype 特有の設定 (choshoctl 用)
 -- Luaの if 文で分岐させる代わりに ddc の機能でスマートに管理できます
 fn["ddc#custom#patch_filetype"]('choshoctl', {
-
   sources = { 'vsnip' } 
-
 })
 
 -- 4. キーマッピング
 local opts = { silent = true, expr = true, replace_keycodes = false }
 
--- TABで次を選択、または手動補完を開始 
+-- TABで次の候補を選択、または手動補完を開始 
 vim.keymap.set('i', '<TAB>', function()
 
   if fn.pumvisible() == 1 then
@@ -74,11 +74,11 @@ vim.keymap.set('i', '<TAB>', function()
 
 end, opts)
 
--- S-TABで前を選択 
+-- S-TABで一つ前の候補を選択 
 vim.keymap.set('i', '<S-TAB>', function()
   return fn.pumvisible() == 1 and '<C-p>' or '<C-h>'
 end, opts)
 
--- 5. 起動
+-- 5. ddcの有効化
 fn["ddc#enable"]() 
 
