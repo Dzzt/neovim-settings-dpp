@@ -2,65 +2,9 @@
 repo = 'Shougo/ddc.vim'
 on_event = 'InsertEnter'
 depends = ['denops.vim']
-hook_source = '''
+lua_source = '''
 
-   set shortmess+=c
-
-   "set ui
-   call ddc#custom#patch_global('ui','native')
-
-   "sources
-
-   if &filetype == 'choshoctl'
-
-       call ddc#custom#patch_global('sources', ['vsnip'])
-
-   else
-
-       call ddc#custom#patch_global('sources', ['around', 'file'])
-
-   endif
-
-   "configure sources
-   call ddc#custom#patch_global('sourceOptions', #{
-        \ _: #{
-        \     matchers: ['matcher_head','matcher_length'],
-        \     sorters: ['sorter_rank'],
-        \     converters: ['converter_remove_overlap'],
-        \ },
-        \ around: #{
-        \     mark: 'A'
-        \ },
-        \ file: #{
-        \     mark: 'F',
-        \     isVolatile: v:true,
-        \     forceCompletionPattern: '\S/\S*',
-        \ },
-        \ nvim-lsp: #{
-        \     mark: 'L',
-        \     forceCompletionPattern: '\.\w*|:\w*|->\w*',
-        \ },
-        \ vsnip: #{
-        \     mark: 'vsnip',
-        \ },
-        \ })
-
-   "set parameters for sources
-   call ddc#custom#patch_global('sourceParams', {
-        \ 'around': {'maxSize': 500},
-        \ 'file': {'smartCase': v:true},
-        \ })
-
-   "to use TAB or S-TAB over popup menu
-   inoremap <silent><expr> <TAB>
-        \ pumvisible() ? '<C-n>' :
-        \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
-        \ '<TAB>' : ddc#map#manual_complete()
-
-   inoremap <expr><S-TAB>  pumvisible() ? '<C-p>' : '<C-h>'
-
-   "activate ddc
-   call ddc#enable()
+    require('config_ddc')
 
 '''
 
@@ -138,8 +82,4 @@ hook_add = '''
 [[plugins]]
 repo = 'uga-rosa/ddc-source-vsnip'
 on_source ='ddc.vim'
-
-[[plugins]]
-repo = 'Dzzt/ddu-source-mrw.git'
-on_source = 'ddc.vim'
 
