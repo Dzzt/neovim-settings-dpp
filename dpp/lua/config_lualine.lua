@@ -1,20 +1,25 @@
 -- lualine_config.lua
+
+local fn = vim.fn
+
 require('lualine').setup {
     options = {
         -- theme = 'base16',
-        -- theme = 'everforest',
+        theme = 'everforest',
         -- theme = 'gruvbox-material',
         -- theme = 'horizon',
         -- theme = 'iceberg_dark',
         -- theme = 'iceberg_light',
         -- theme = 'modus-vivendi',
-        theme = 'nord',
+        -- theme = 'nord',
         -- theme = 'papercolor_light',
         -- theme = 'seoul256',
         -- theme = 'palenight',
         -- theme = 'OceanicNext',
-        component_separators = { left = '', right = ''},
-        section_separators = { left = '', right = ''},
+        component_separators = { left = fn.nr2char(57521), 
+                                 right = fn.nr2char(57523)},
+        section_separators = { left = fn.nr2char(57520),
+                               right = fn.nr2char(57522)},
         icons_enabled = true,
         disabled_filetypes = {},
         always_divide_middle = true,

@@ -7,7 +7,7 @@ if g.neovide then
 
     --colorscheme for gui
     local guibackground = "dark"
-    local guicolorscheme = "iceberg"
+    local guicolorscheme = "nefertiti"
 
     opt.background = guibackground
     cmd.colorscheme(guicolorscheme)

@@ -54,7 +54,7 @@ fn["ddc#custom#patch_filetype"]('choshoctl', {
 })
 
 -- 4. キーマッピング
-local opts = { silent = true, expr = true, replace_keycodes = false }
+local opts = { silent = true, expr = true, replace_keycodes = true }
 
 -- TABで次の候補を選択、または手動補完を開始 
 vim.keymap.set('i', '<TAB>', function()
