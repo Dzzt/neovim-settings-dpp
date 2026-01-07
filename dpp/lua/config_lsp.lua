@@ -1,24 +1,20 @@
 local lsp = vim.lsp
 
-local lspconfig = require('lspconfig')
-local mason_lspconfig = require('mason-lspconfig')
-
--- use deno installed by Chocolatey(not by Mason for denols)
-cmd = {'deno', 'lsp'}
+-- default configuration
+lsp.config("*",{})
 
 -- Lsp servers
 local lsp_servers = {
-    "pyright",
-    "lua_ls",
+    "denols",
+    "pylsp",
     "powershell_es",
-    "csharp_ls",
     "vimls",
 }
 
 -- Setup mason_lspconfig here
-mason_lspconfig.setup{
+require('mason-lspconfig').setup{
     ensure_installed = lsp_servers,
 }
 
-lsp.config("*",{})
+-- enable lsp servers
 lsp.enable(lsp_servers)

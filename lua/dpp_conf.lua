@@ -71,33 +71,6 @@ function(opts)
 	dpp.async_ext_action("installer", "update", { names = args })
 end, { nargs = "*" })
 
--- list updated plugins
-api.nvim_create_user_command("DppShowUpdatedPlugins",
-function()
-
-    local updated_plugins = dpp.sync_ext_action("installer", "getUpdated")
-
-    if next(updated_plugins) == nil then
-        print("No plugins updated.")
-        return
-    else
-        print(string.format("Updated plugins:\n"))
-
-        for _,plugin in ipairs(updated_plugins) do
-
-            local string_result = string.format(
-                    " %s\n  %s\n\n"
-                    ,plugin["repo"]
-                    ,plugin["url"]
-                )
-
-            print(string_result)
-
-        end
-    end
-
-end, {})
-
 
 -- これは手で打ってもいいかな？
 ---- create install command
@@ -107,20 +80,47 @@ end, {})
 --end,{})
 
 
--- 上ので足りるので
 -- show update logs
--- api.nvim_create_user_command("DppShowUpdateLogs",
+ api.nvim_create_user_command("DppShowUpdateLogs",
+ function()
+ 
+     local logs = dpp.sync_ext_action("installer", "getUpdateLogs")
+ 
+     if next(logs) == nil then
+         print("No plugins updated.")
+         return
+     else
+         print(logs[#logs-1])
+         print(logs[#logs])
+     end
+ 
+ end, {})
+ 
+-- 上ので足りるので
+-- list updated plugins
+-- api.nvim_create_user_command("DppShowUpdatedPlugins",
 -- function()
 -- 
---     local logs = dpp.sync_ext_action("installer", "getUpdateLogs")
+--     local updated_plugins = dpp.sync_ext_action("installer", "getUpdated")
 -- 
---     if next(logs) == nil then
+--     if next(updated_plugins) == nil then
 --         print("No plugins updated.")
 --         return
 --     else
---         print(logs[#logs-1])
---         print(logs[#logs])
+--         print(string.format("Updated plugins:\n\n"))
+-- 
+--         for _,plugin in ipairs(updated_plugins) do
+-- 
+--             local string_result = string.format(
+--                     "  %s\n  %s\n\n"
+--                     ,plugin["repo"]
+--                     ,plugin["url"]
+--                 )
+-- 
+--             print(string_result)
+-- 
+--         end
 --     end
 -- 
 -- end, {})
--- 
+

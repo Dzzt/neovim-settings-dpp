@@ -6,7 +6,7 @@ local cmd = vim.cmd
 if g.neovide then
 
     --colorscheme for gui
-    local guibackground = "dark"
+    local guibackground = "light"
     local guicolorscheme = "iceberg"
 
     opt.background = guibackground
@@ -36,7 +36,7 @@ if g.neovide then
     opt.guifont = "Bizin Gothic NF:h10.5:#e-subpixelantialias"
 
     -- linespace
-    opt.linespace = 4
+    opt.linespace = 2
 
 
     -- Configration for Neovide

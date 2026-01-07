@@ -27,7 +27,6 @@ local opt = vim.opt
 -- share clipboard with os
     opt.clipboard:append{'unnamedplus'}
 
--- 指定しないとddが妙に遅くなる
 -- for delay for key combination
     opt.timeoutlen = 200
     opt.ttimeoutlen = 80

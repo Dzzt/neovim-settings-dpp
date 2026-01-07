@@ -4,6 +4,8 @@ local mason = require('mason')
 mason.setup({
     ui = {
 
+        install_root_dir = vim.fn.expand('~/.config/mason'),
+
         icons = {
            package_installed = "✓",
            package_pending = "➜",
@@ -12,9 +14,8 @@ mason.setup({
 
         keymaps = {
             filter = '<C-f>',
-            toggle_help = 'g?'
+            toggle_help = 'g?',
         },
-
     },
 })
 

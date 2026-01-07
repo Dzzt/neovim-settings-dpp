@@ -1,6 +1,7 @@
 -- configuration for ddu.vim
 
 local fn = vim.fn
+local opt = vim.opt
 local keymap = vim.keymap
 
 -- 1. runtimepath の動的設定 (dpp のパス解決)
@@ -21,7 +22,7 @@ local plugins = {
 }
 
 for _, plugin in ipairs(plugins) do
-  vim.opt.runtimepath:append(ddu_repo_dir .. "/" .. plugin)
+  opt.runtimepath:append(ddu_repo_dir .. "/" .. plugin)
 end
 
 
@@ -87,11 +88,11 @@ _G.ddu_ff_settings = function()
   local opts = { buffer = true, silent = true }
   
 -- アクション名だけで定義できる
-  vim.keymap.set('n', '<C-y>',   do_action('itemAction'),       opts) 
-  vim.keymap.set('n', '<CR>',    do_action('itemAction'),       opts) 
-  vim.keymap.set('n', '<Space>', do_action('toggleSelectItem'), opts) 
-  vim.keymap.set('n', 'i',       do_action('openFilterWindow'), opts) 
-  vim.keymap.set('n', 'q',       do_action('quit'),             opts) 
+  keymap.set('n', '<C-y>',   do_action('itemAction'),       opts) 
+  keymap.set('n', '<CR>',    do_action('itemAction'),       opts) 
+  keymap.set('n', '<Space>', do_action('toggleSelectItem'), opts) 
+  keymap.set('n', 'i',       do_action('openFilterWindow'), opts) 
+  keymap.set('n', 'q',       do_action('quit'),             opts) 
 end
 
 -- フィルター用の設定
@@ -100,13 +101,13 @@ _G.ddu_filter_settings = function()
   local opts = { buffer = true, silent = true }
 
   -- フィルターウィンドウを閉じて親ウィンドウに戻るキー
-  vim.keymap.set('i', '<CR>', function()
+  keymap.set('i', '<CR>', function()
     do_action("closeFilterWindow")
     fn.win_gotoid(vim.g["ddu#ui#ff#_filter_parent_winid"])
   end, opts)
 
-  vim.keymap.set('n', '<CR>', do_action('closeFilterWindow'), opts)
-  vim.keymap.set('n', 'q',    do_action('closeFilterWindow'), opts)
+  keymap.set('n', '<CR>', do_action('closeFilterWindow'), opts)
+  keymap.set('n', 'q',    do_action('closeFilterWindow'), opts)
 end
 
 
@@ -133,7 +134,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
 local function ddu_start(source_spec)
   return function()
-    vim.fn["ddu#start"]({ sources = { source_spec } })
+    fn["ddu#start"]({ sources = { source_spec } })
   end
 end
 
