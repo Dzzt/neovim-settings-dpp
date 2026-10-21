@@ -1,4 +1,3 @@
-
 local opt = vim.opt
 
 -- options for appearance
@@ -7,21 +6,20 @@ local opt = vim.opt
 -- Appearance
 
 -- Height for command line
-    opt.cmdheight = 1
+opt.cmdheight = 1
 
 -- Display line numbers relatively
-    opt.number = true
-    opt.relativenumber = true
+opt.number = true
+opt.relativenumber = true
 
 -- Plugin shows mode instead
-    opt.showmode = false
+opt.showmode = false
 
 -- ---------------------------------------------------------
 -- Status Line
 
 -- Show partial commands in the last line of the screen
-    opt.showcmd = true
+opt.showcmd = true
 
 -- Always display the status line
-    opt.laststatus = 2
-
+opt.laststatus = 2

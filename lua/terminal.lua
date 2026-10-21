@@ -1,4 +1,3 @@
-
 local opt = vim.opt
 local g = vim.g
 
@@ -23,4 +22,3 @@ g.terminal_color_12 = '#2f2f2f'
 -- g.terminal_color_13 = '#000000'
 g.terminal_color_14 = '#009f66'
 -- g.terminal_color_15 = '#000000'
-

@@ -29,3 +29,18 @@ repo = 'vim-scripts/zenesque.vim'
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
 
+[[plugins]]
+repo = 'wadackel/vim-dogrun'
+
+[[plugins]]
+repo = 'thesimonho/kanagawa-paper.nvim'
+lua_source = '''
+    require('config_kanagawa-paper')
+'''
+
+[[plugins]]
+repo = 'rose-pine/neovim'
+name = 'rose-pine'
+lua_source = '''
+    require('config_rose-pine')
+'''

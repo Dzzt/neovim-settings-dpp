@@ -1,71 +1,66 @@
 -- lualine_config.lua
+require("lualine").setup({
+	options = {
+		-- theme = 'base16',
+		-- theme = 'everforest',
+		-- theme = 'gruvbox-material',
+		-- theme = 'horizon',
+		-- theme = 'iceberg_dark',
+		-- theme = 'iceberg_light',
+		-- theme = 'modus-vivendi',
+		theme = "nord",
+		-- theme = 'papercolor_light',
+		-- theme = 'seoul256',
+		-- theme = 'palenight',
+		-- theme = 'OceanicNext',
+		-- theme = 'moonfly',
+		-- theme = "rose-pine",
+		-- theme = "rose-pine-alt",
+		-- theme = "nightfly",
+		component_separators = { left = "", right = "" },
+		section_separators = { left = "", right = "" },
+		icons_enabled = true,
+		disabled_filetypes = {},
+		always_divide_middle = true,
+		colored = false,
+	},
 
-local fn = vim.fn
+	sections = {
 
-require('lualine').setup {
-    options = {
-        -- theme = 'base16',
-        theme = 'everforest',
-        -- theme = 'gruvbox-material',
-        -- theme = 'horizon',
-        -- theme = 'iceberg_dark',
-        -- theme = 'iceberg_light',
-        -- theme = 'modus-vivendi',
-        -- theme = 'nord',
-        -- theme = 'papercolor_light',
-        -- theme = 'seoul256',
-        -- theme = 'palenight',
-        -- theme = 'OceanicNext',
-        component_separators = { left = fn.nr2char(57521), 
-                                 right = fn.nr2char(57523)},
-        section_separators = { left = fn.nr2char(57520),
-                               right = fn.nr2char(57522)},
-        icons_enabled = true,
-        disabled_filetypes = {},
-        always_divide_middle = true,
-        colored = false,
-    },
+		lualine_a = { "mode" },
 
-    sections = {
+		lualine_b = {
+			{ "windows", mode = 1 },
+		},
 
-        lualine_a = {'mode'},
+		lualine_c = {
+			{
+				"filename",
+				path = 1,
+				file_status = true,
+				shorting_target = 40,
+				symbols = {
+					modified = " [+]",
+					readonly = " [RO]",
+					unnamed = "Untitled",
+				},
+			},
+		},
 
-        lualine_b = {
-            {'windows',
-                mode = 1
-            }
-        },
+		lualine_x = { "encoding", "filetype", "fileformat" },
+		lualine_y = { "progress", "searchcount" },
+		lualine_z = { "location" },
+	},
 
-        lualine_c = {
-            {'filename',
-                 path = 1,
-                 file_status = true,
-                 shorting_target = 40,
-                 symbols = {
-                     modified = ' [+]',
-                     readonly = ' [RO]',
-                     unnamed = 'Untitled',
-                 }
-            }
-        },
+	inactive_sections = {
+		lualine_a = {},
+		lualine_b = {},
+		lualine_c = { "filename" },
+		lualine_x = { "location" },
+		lualine_y = {},
+		lualine_z = {},
+	},
 
-        lualine_x = {'encoding','filetype','fileformat'},
-        lualine_y = {'progress','searchcount'},
-        lualine_z = {'location'}
-
-    },
-
-    inactive_sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {'filename'},
-        lualine_x = {'location'},
-        lualine_y = {},
-        lualine_z = {}
-    },
-
-    tabline = {},
-    extensions = {},
-
-}
-
+	tabline = {},
+	extensions = {},
+})

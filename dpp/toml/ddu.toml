@@ -17,6 +17,15 @@ lua_add = '''
 repo = 'Shougo/ddu-ui-ff'
 on_source = 'ddu.vim'
 
+#########################################################
+[[plugins]]
+repo = 'Shougo/ddu-ui-filer'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'Shougo/ddu-column-filename'
+on_source = 'ddu.vim'
+
 #kind
 #########################################################
 [[plugins]]
@@ -35,6 +44,10 @@ on_source = 'ddu.vim'
 
 [[plugins]]
 repo = 'Shougo/ddu-filter-matcher_hidden'
+on_source = 'ddu.vim'
+
+[[plugins]]
+repo = 'Shougo/ddu-filter-sorter_alpha'
 on_source = 'ddu.vim'
 
 #sources

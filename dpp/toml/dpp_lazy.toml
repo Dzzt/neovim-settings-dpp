@@ -33,7 +33,7 @@ lua_post_source = '''
 '''
 
 [[plugins]]
-repo = 'hadronized/hop.nvim'
+repo = 'smoka7/hop.nvim'
 on_map = ['<Leader>f', '<Leader>t', '<Leader><Leader>f', '<Leader><Leader>t']
 lua_post_source='''
     require('config_hop')
@@ -50,7 +50,7 @@ on_event = 'VimEnter'
 #
 [[plugins]]
 repo = 'windwp/nvim-autopairs'
-on_event = 'VimEnter'
+on_event = 'InsertEnter'
 lua_source = '''
     require("nvim-autopairs").setup{ }  
 '''

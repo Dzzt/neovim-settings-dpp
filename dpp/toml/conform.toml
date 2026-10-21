@@ -1,0 +1,8 @@
+#formatter
+
+[[plugins]]
+repo = 'stevearc/conform.nvim'
+on_event = ['BufReadPost','BufWritePre']
+lua_source = '''
+    require('config_conform')
+'''

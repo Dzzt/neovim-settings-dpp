@@ -1,0 +1,12 @@
+#git
+
+[[plugins]]
+repo = 'sindrets/diffview.nvim'
+
+[[plugins]]
+repo = 'isakbm/gitgraph.nvim'
+depends = ['diffview.nvim']
+on_cmd = ["GitGraph"]
+lua_source = '''
+    require('config_gitgraph')
+'''

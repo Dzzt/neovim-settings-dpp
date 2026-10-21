@@ -1,4 +1,5 @@
 --specify chocolatey installed deno.exe
 
 local g = vim.g
-g["denops#deno"] = "C:/ProgramData/chocolatey/lib/deno/deno.exe"
+local fn = vim.fn
+g["denops#deno"] = fn.expand("~/AppData/Local/Microsoft/WinGet/Links/deno.exe")

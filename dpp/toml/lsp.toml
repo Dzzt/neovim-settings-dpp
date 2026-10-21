@@ -8,14 +8,13 @@ lua_source = '''
 '''
 
 [[plugins]]
-repo ='mason-org/mason-lspconfig.nvim'
+repo = 'mason-org/mason-lspconfig.nvim'
 on_source = 'nvim-lspconfig'
 
 #easy server installer works on neovim
 [[plugins]]
-repo ='mason-org/mason.nvim'
+repo = 'mason-org/mason.nvim'
 on_source = 'nvim-lspconfig'
 lua_source = '''
     require('config_mason')
 '''
-

@@ -1,0 +1,9 @@
+{
+    "imports": {
+        "@shougo/dpp-vim/types": "jsr:@shougo/dpp-vim@^6.6.0/types",
+        "@shougo/dpp-vim/dpp": "jsr:@shougo/dpp-vim@^6.6.0/dpp",
+        "@shougo/dpp-vim/config": "jsr:@shougo/dpp-vim@^6.6.0/config",
+        "@denops/std": "jsr:@denops/std@^8.2.0",
+        "@denops/std/function": "jsr:@denops/std@^8.2.0/function"
+    }
+}

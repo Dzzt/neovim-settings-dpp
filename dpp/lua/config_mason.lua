@@ -2,9 +2,10 @@
 local mason = require('mason')
 
 mason.setup({
-    ui = {
 
-        install_root_dir = vim.fn.expand('~/.config/mason'),
+    install_root_dir = vim.fn.expand('~/.config/mason'),
+
+    ui = {
 
         icons = {
            package_installed = "✓",
