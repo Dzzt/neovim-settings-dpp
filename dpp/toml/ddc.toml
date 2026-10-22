@@ -82,6 +82,6 @@ on_source = 'ddc.vim'
 #completion
 [[plugins]]
 repo = 'Dzzt/ddc-source-completion_alter'
-on_ft = 'choshoctl'
+on_ft = 'spectype'
 depends = ['ddc.vim']
 

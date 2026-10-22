@@ -97,6 +97,25 @@ fn["ddc#custom#patch_global"]({
 
 -- 3. Filetype 特有の設定
 
+-- choshoctl 用
+fn["ddc#custom#patch_filetype"]("spectype", {
+	sources = { "completion_alter" },
+
+	sourceOptions = {
+		completion_alter = {
+			matcherKey = "abbr", -- abbr の値でマッチさせる
+			sorters = { "sorter_head" }, -- abbr の先頭からマッチさせる
+			minAutoCompleteLength = 3, -- 3文字以上入力したら候補を表示
+		},
+	},
+
+	sourceParams = {
+		completion_alter = {
+			jsonPath = fn.expand("~/.config/nvim/snippets/spectype.json"), --jsonファイルのパス
+		},
+	},
+})
+
 -- lspを使う言語
 fn["ddc#custom#patch_filetype"]({ "lua", "typescript", "ps1", "python", "vim", "go" }, {
 	sources = { "lsp", "around", "vsnip" },
